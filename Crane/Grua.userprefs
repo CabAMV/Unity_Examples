@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraConfig.cs">
+    <Files>
+      <File FileName="Assets\Scripts\springArm.cs" Line="78" Column="27" />
+      <File FileName="Assets\Scripts\Hook.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\chainScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\carScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraConfig.cs" Line="12" Column="34" />
+      <File FileName="Assets\Scripts\CameraTargetController.cs" Line="25" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
