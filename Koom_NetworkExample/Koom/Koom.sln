@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koom", "Koom.csproj", "{E1779AEE-DF42-0431-A6DB-3833F9DE1338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koom.Editor", "Koom.Editor.csproj", "{510E735F-9B55-4407-C34F-C5C6233A78EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1779AEE-DF42-0431-A6DB-3833F9DE1338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1779AEE-DF42-0431-A6DB-3833F9DE1338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1779AEE-DF42-0431-A6DB-3833F9DE1338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1779AEE-DF42-0431-A6DB-3833F9DE1338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510E735F-9B55-4407-C34F-C5C6233A78EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510E735F-9B55-4407-C34F-C5C6233A78EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510E735F-9B55-4407-C34F-C5C6233A78EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510E735F-9B55-4407-C34F-C5C6233A78EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
