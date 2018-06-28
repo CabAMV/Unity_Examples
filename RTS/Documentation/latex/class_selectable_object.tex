@@ -1,0 +1,180 @@
+\hypertarget{class_selectable_object}{}\section{Selectable\+Object Class Reference}
+\label{class_selectable_object}\index{Selectable\+Object@{Selectable\+Object}}
+
+
+Class that as father for those objects susceptibles of being selected.  
+
+
+Inheritance diagram for Selectable\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_selectable_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_selectable_object_adb08e08703832f624d9bf62fc02208a8}{action}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Debug method for the child classes. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_selectable_object_a8d56c05598d677cca9c8b06a774ee5a2}{set\+Cell}} (\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} other)
+\begin{DoxyCompactList}\small\item\em Set the cell where this object is located or this object is associated with. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_selectable_object_a80e0f02ea8465ff2edfbaee1d5451dde}{get\+Cell}} ()
+\begin{DoxyCompactList}\small\item\em Returns the cell where this object is located or this object is associated with. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_selectable_object_a3817f94af010c5cc5d2967a145b39f21}{set\+Building}} (\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} other)
+\begin{DoxyCompactList}\small\item\em Sets the building that is associated with this object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_selectable_object_a12caa058f4c53aa5debb1004f1169202}{get\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Returns this as a building or if is not a building returns the one that this object is associated with. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_selectable_object_a049896cdcfa8970062bf5a5cb38b570b}{set\+Game\+Mode\+Manager}} (\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_selectable_object_ae127d54f7f6ac4f1655b1fa3f4dd480f}{game\+Mode}})
+\begin{DoxyCompactList}\small\item\em Sets this objects gamemode \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_selectable_object_a143b593a577ffb7de1edd530c677c9e6}{get\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Returns the variable game\+Mode that acts as identifier of the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_selectable_object_ae127d54f7f6ac4f1655b1fa3f4dd480f}{game\+Mode}}
+\begin{DoxyCompactList}\small\item\em Game Mode Manager that acts as identifier of the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that as father for those objects susceptibles of being selected. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_selectable_object_adb08e08703832f624d9bf62fc02208a8}\label{class_selectable_object_adb08e08703832f624d9bf62fc02208a8}} 
+\index{Selectable\+Object@{Selectable\+Object}!action@{action}}
+\index{action@{action}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily virtual void Selectable\+Object.\+action (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Debug method for the child classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hit} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_cell_aecb362e44d7117cb4ecb1961092bcb28}{Cell}}.
+
+\mbox{\Hypertarget{class_selectable_object_a12caa058f4c53aa5debb1004f1169202}\label{class_selectable_object_a12caa058f4c53aa5debb1004f1169202}} 
+\index{Selectable\+Object@{Selectable\+Object}!get\+Building@{get\+Building}}
+\index{get\+Building@{get\+Building}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{get\+Building()}{getBuilding()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Selectable\+Object.\+get\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns this as a building or if is not a building returns the one that this object is associated with. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_cell_ab32941221f7e2df38227961c8d8dbfec}{Cell}}.
+
+\mbox{\Hypertarget{class_selectable_object_a80e0f02ea8465ff2edfbaee1d5451dde}\label{class_selectable_object_a80e0f02ea8465ff2edfbaee1d5451dde}} 
+\index{Selectable\+Object@{Selectable\+Object}!get\+Cell@{get\+Cell}}
+\index{get\+Cell@{get\+Cell}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{get\+Cell()}{getCell()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Selectable\+Object.\+get\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the cell where this object is located or this object is associated with. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_building_a3e889268dc78194d5a3ae48f73067ff8}{Building}}.
+
+\mbox{\Hypertarget{class_selectable_object_a143b593a577ffb7de1edd530c677c9e6}\label{class_selectable_object_a143b593a577ffb7de1edd530c677c9e6}} 
+\index{Selectable\+Object@{Selectable\+Object}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Selectable\+Object.\+get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the variable game\+Mode that acts as identifier of the player. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_selectable_object_a3817f94af010c5cc5d2967a145b39f21}\label{class_selectable_object_a3817f94af010c5cc5d2967a145b39f21}} 
+\index{Selectable\+Object@{Selectable\+Object}!set\+Building@{set\+Building}}
+\index{set\+Building@{set\+Building}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{set\+Building()}{setBuilding()}}
+{\footnotesize\ttfamily virtual void Selectable\+Object.\+set\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the building that is associated with this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_cell_a415c2fd77ec3b53bed8115fddd311a6f}{Cell}}.
+
+\mbox{\Hypertarget{class_selectable_object_a8d56c05598d677cca9c8b06a774ee5a2}\label{class_selectable_object_a8d56c05598d677cca9c8b06a774ee5a2}} 
+\index{Selectable\+Object@{Selectable\+Object}!set\+Cell@{set\+Cell}}
+\index{set\+Cell@{set\+Cell}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{set\+Cell()}{setCell()}}
+{\footnotesize\ttfamily virtual void Selectable\+Object.\+set\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the cell where this object is located or this object is associated with. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_building_a81f0e7df4171d3508afefe8deac1eea6}{Building}}.
+
+\mbox{\Hypertarget{class_selectable_object_a049896cdcfa8970062bf5a5cb38b570b}\label{class_selectable_object_a049896cdcfa8970062bf5a5cb38b570b}} 
+\index{Selectable\+Object@{Selectable\+Object}!set\+Game\+Mode\+Manager@{set\+Game\+Mode\+Manager}}
+\index{set\+Game\+Mode\+Manager@{set\+Game\+Mode\+Manager}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{set\+Game\+Mode\+Manager()}{setGameModeManager()}}
+{\footnotesize\ttfamily void Selectable\+Object.\+set\+Game\+Mode\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{game\+Mode }\end{DoxyParamCaption})}
+
+
+
+Sets this objects gamemode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Mode} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_selectable_object_ae127d54f7f6ac4f1655b1fa3f4dd480f}\label{class_selectable_object_ae127d54f7f6ac4f1655b1fa3f4dd480f}} 
+\index{Selectable\+Object@{Selectable\+Object}!game\+Mode@{game\+Mode}}
+\index{game\+Mode@{game\+Mode}!Selectable\+Object@{Selectable\+Object}}
+\subsubsection{\texorpdfstring{game\+Mode}{gameMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Selectable\+Object.\+game\+Mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Game Mode Manager that acts as identifier of the player. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/Selectable\+Object.\+cs\end{DoxyCompactItemize}

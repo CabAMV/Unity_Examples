@@ -1,0 +1,279 @@
+\hypertarget{class_game_mode}{}\section{Game\+Mode Class Reference}
+\label{class_game_mode}\index{Game\+Mode@{Game\+Mode}}
+
+
+Father class for the different game modes or states the player can be in.  
+
+
+Inheritance diagram for Game\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_mode_af0110e3ce61ccc4d2f77d64ffb9eeecf}{set\+Cell\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Sets the cell\+Selected. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_mode_a32a61bf0dfef83cfc1724b92f3d50cdf}{game\+Mode\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Events of the Game mode. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_mode_ac6701d024e8ab5bf8a8876618a6fd01f}{init\+Mode}} (\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Enables the game mode. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_mode_a5aea49bdae2459b78e1972dd0a34918e}{disable\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Disables the game mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_game_mode_a4403dc7308e53384ec79bb67125f7324}{get\+Cell\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Returns the cell selected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_game_mode_ab4b23a7abb615a7ae22212a140997f11}{get\+Current\+Selection}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current selection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_a935569fe49afce6c4778b58fee12620c}{set\+Selector}} (Game\+Object \mbox{\hyperlink{class_game_mode_a01e79f1e24fe9681e06b53d81eb81293}{selector}})
+\begin{DoxyCompactList}\small\item\em Sets the selector of the game mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_a6c6008ded1f901492808039a45b7a3af}{set\+Selector\+Dimensions}} (int x=1, int y=1)
+\begin{DoxyCompactList}\small\item\em Sets the selector dimensions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_a4c21d4c2047f2e8be9638133b536b200}{set\+Selector\+Dimensions}} (Vector2 d)
+\begin{DoxyCompactList}\small\item\em Sets the selector dimensions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_adfc4880129481cdc7012440d977d4ea5}{set\+Game\+Mode\+Manager}} (\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_mode_a5a2348927e4b11e88abaf1d2328eed60}{game\+Mode\+Manager}})
+\begin{DoxyCompactList}\small\item\em Sets the game mode manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_mode_aa8a0deab7115a3c5fcf42503691a9a52}{get\+Game\+Mode\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returns the game mode manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Raycast\+Hit \mbox{\hyperlink{class_game_mode_a5ad1c251d03a0407d064fd581b1119b5}{hit}}
+\begin{DoxyCompactList}\small\item\em Hit result of the cursor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_game_mode_ae7e1e703236e093aeb97038045c1c2a3}{current\+Selection}}
+\begin{DoxyCompactList}\small\item\em What object is currently selected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_game_mode_aada21e937be16ab599f8f7501e23c8c4}{cell\+Selected}}
+\begin{DoxyCompactList}\small\item\em Actual cell selected. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_game_mode_a01e79f1e24fe9681e06b53d81eb81293}{selector}}
+\begin{DoxyCompactList}\small\item\em Visual representation of the cursor in the world. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_mode_a5a2348927e4b11e88abaf1d2328eed60}{game\+Mode\+Manager}}
+\begin{DoxyCompactList}\small\item\em Game mode manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Father class for the different game modes or states the player can be in. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_mode_a5aea49bdae2459b78e1972dd0a34918e}\label{class_game_mode_a5aea49bdae2459b78e1972dd0a34918e}} 
+\index{Game\+Mode@{Game\+Mode}!disable\+Mode@{disable\+Mode}}
+\index{disable\+Mode@{disable\+Mode}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{disable\+Mode()}{disableMode()}}
+{\footnotesize\ttfamily virtual void Game\+Mode.\+disable\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Disables the game mode. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_shoot_mode_a172531ba502bfea3d75404e1c890db6b}{Shoot\+Mode}}, \mbox{\hyperlink{class_u_i_mode_a0dd6193dde5d68b9e1bc94f8a7468db5}{U\+I\+Mode}}, and \mbox{\hyperlink{class_construction_mode_a4229d5bd9df34fd90758404acd3b9cc8}{Construction\+Mode}}.
+
+\mbox{\Hypertarget{class_game_mode_a32a61bf0dfef83cfc1724b92f3d50cdf}\label{class_game_mode_a32a61bf0dfef83cfc1724b92f3d50cdf}} 
+\index{Game\+Mode@{Game\+Mode}!game\+Mode\+Events@{game\+Mode\+Events}}
+\index{game\+Mode\+Events@{game\+Mode\+Events}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{game\+Mode\+Events()}{gameModeEvents()}}
+{\footnotesize\ttfamily virtual void Game\+Mode.\+game\+Mode\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Events of the Game mode. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_construction_mode_a58599c3aac705627c3b0fd034d54092a}{Construction\+Mode}}, \mbox{\hyperlink{class_shoot_mode_a3c9ab9c7883d23161205abebbc233c13}{Shoot\+Mode}}, \mbox{\hyperlink{class_selection_mode_a72054e5ce70eca2fbc50e8762a9d8c70}{Selection\+Mode}}, and \mbox{\hyperlink{class_u_i_mode_a9a0cb075f349e557e8aa8f9f55748c05}{U\+I\+Mode}}.
+
+\mbox{\Hypertarget{class_game_mode_a4403dc7308e53384ec79bb67125f7324}\label{class_game_mode_a4403dc7308e53384ec79bb67125f7324}} 
+\index{Game\+Mode@{Game\+Mode}!get\+Cell\+Selected@{get\+Cell\+Selected}}
+\index{get\+Cell\+Selected@{get\+Cell\+Selected}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{get\+Cell\+Selected()}{getCellSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Game\+Mode.\+get\+Cell\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the cell selected. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_mode_ab4b23a7abb615a7ae22212a140997f11}\label{class_game_mode_ab4b23a7abb615a7ae22212a140997f11}} 
+\index{Game\+Mode@{Game\+Mode}!get\+Current\+Selection@{get\+Current\+Selection}}
+\index{get\+Current\+Selection@{get\+Current\+Selection}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{get\+Current\+Selection()}{getCurrentSelection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Game\+Mode.\+get\+Current\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current selection. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_mode_aa8a0deab7115a3c5fcf42503691a9a52}\label{class_game_mode_aa8a0deab7115a3c5fcf42503691a9a52}} 
+\index{Game\+Mode@{Game\+Mode}!get\+Game\+Mode\+Manager@{get\+Game\+Mode\+Manager}}
+\index{get\+Game\+Mode\+Manager@{get\+Game\+Mode\+Manager}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{get\+Game\+Mode\+Manager()}{getGameModeManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game\+Mode.\+get\+Game\+Mode\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the game mode manager. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_mode_ac6701d024e8ab5bf8a8876618a6fd01f}\label{class_game_mode_ac6701d024e8ab5bf8a8876618a6fd01f}} 
+\index{Game\+Mode@{Game\+Mode}!init\+Mode@{init\+Mode}}
+\index{init\+Mode@{init\+Mode}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{init\+Mode()}{initMode()}}
+{\footnotesize\ttfamily virtual void Game\+Mode.\+init\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Enables the game mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_shoot_mode_ac89bf282dbd0cb303ca249b6e45b3507}{Shoot\+Mode}}, \mbox{\hyperlink{class_selection_mode_a6a73f2cb41889a41fcffaa417119d921}{Selection\+Mode}}, and \mbox{\hyperlink{class_u_i_mode_a97dcd9e20017c87075bcc9c1a560d8a8}{U\+I\+Mode}}.
+
+\mbox{\Hypertarget{class_game_mode_af0110e3ce61ccc4d2f77d64ffb9eeecf}\label{class_game_mode_af0110e3ce61ccc4d2f77d64ffb9eeecf}} 
+\index{Game\+Mode@{Game\+Mode}!set\+Cell\+Selected@{set\+Cell\+Selected}}
+\index{set\+Cell\+Selected@{set\+Cell\+Selected}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{set\+Cell\+Selected()}{setCellSelected()}}
+{\footnotesize\ttfamily virtual void Game\+Mode.\+set\+Cell\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the cell\+Selected. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_construction_mode_a4668815afe087d0cea35f8c7144e47f9}{Construction\+Mode}}, and \mbox{\hyperlink{class_selection_mode_a2abd35e0ae4625320cb5ee5b35e3d759}{Selection\+Mode}}.
+
+\mbox{\Hypertarget{class_game_mode_adfc4880129481cdc7012440d977d4ea5}\label{class_game_mode_adfc4880129481cdc7012440d977d4ea5}} 
+\index{Game\+Mode@{Game\+Mode}!set\+Game\+Mode\+Manager@{set\+Game\+Mode\+Manager}}
+\index{set\+Game\+Mode\+Manager@{set\+Game\+Mode\+Manager}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{set\+Game\+Mode\+Manager()}{setGameModeManager()}}
+{\footnotesize\ttfamily void Game\+Mode.\+set\+Game\+Mode\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{game\+Mode\+Manager }\end{DoxyParamCaption})}
+
+
+
+Sets the game mode manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Mode\+Manager} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_mode_a935569fe49afce6c4778b58fee12620c}\label{class_game_mode_a935569fe49afce6c4778b58fee12620c}} 
+\index{Game\+Mode@{Game\+Mode}!set\+Selector@{set\+Selector}}
+\index{set\+Selector@{set\+Selector}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{set\+Selector()}{setSelector()}}
+{\footnotesize\ttfamily void Game\+Mode.\+set\+Selector (\begin{DoxyParamCaption}\item[{Game\+Object}]{selector }\end{DoxyParamCaption})}
+
+
+
+Sets the selector of the game mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selector} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_mode_a6c6008ded1f901492808039a45b7a3af}\label{class_game_mode_a6c6008ded1f901492808039a45b7a3af}} 
+\index{Game\+Mode@{Game\+Mode}!set\+Selector\+Dimensions@{set\+Selector\+Dimensions}}
+\index{set\+Selector\+Dimensions@{set\+Selector\+Dimensions}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{set\+Selector\+Dimensions()}{setSelectorDimensions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Mode.\+set\+Selector\+Dimensions (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 1},  }\item[{int}]{y = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Sets the selector dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_mode_a4c21d4c2047f2e8be9638133b536b200}\label{class_game_mode_a4c21d4c2047f2e8be9638133b536b200}} 
+\index{Game\+Mode@{Game\+Mode}!set\+Selector\+Dimensions@{set\+Selector\+Dimensions}}
+\index{set\+Selector\+Dimensions@{set\+Selector\+Dimensions}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{set\+Selector\+Dimensions()}{setSelectorDimensions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Mode.\+set\+Selector\+Dimensions (\begin{DoxyParamCaption}\item[{Vector2}]{d }\end{DoxyParamCaption})}
+
+
+
+Sets the selector dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_mode_aada21e937be16ab599f8f7501e23c8c4}\label{class_game_mode_aada21e937be16ab599f8f7501e23c8c4}} 
+\index{Game\+Mode@{Game\+Mode}!cell\+Selected@{cell\+Selected}}
+\index{cell\+Selected@{cell\+Selected}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{cell\+Selected}{cellSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Game\+Mode.\+cell\+Selected\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Actual cell selected. 
+
+\mbox{\Hypertarget{class_game_mode_ae7e1e703236e093aeb97038045c1c2a3}\label{class_game_mode_ae7e1e703236e093aeb97038045c1c2a3}} 
+\index{Game\+Mode@{Game\+Mode}!current\+Selection@{current\+Selection}}
+\index{current\+Selection@{current\+Selection}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{current\+Selection}{currentSelection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Game\+Mode.\+current\+Selection\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+What object is currently selected. 
+
+\mbox{\Hypertarget{class_game_mode_a5a2348927e4b11e88abaf1d2328eed60}\label{class_game_mode_a5a2348927e4b11e88abaf1d2328eed60}} 
+\index{Game\+Mode@{Game\+Mode}!game\+Mode\+Manager@{game\+Mode\+Manager}}
+\index{game\+Mode\+Manager@{game\+Mode\+Manager}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{game\+Mode\+Manager}{gameModeManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game\+Mode.\+game\+Mode\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Game mode manager. 
+
+\mbox{\Hypertarget{class_game_mode_a5ad1c251d03a0407d064fd581b1119b5}\label{class_game_mode_a5ad1c251d03a0407d064fd581b1119b5}} 
+\index{Game\+Mode@{Game\+Mode}!hit@{hit}}
+\index{hit@{hit}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{hit}{hit}}
+{\footnotesize\ttfamily Raycast\+Hit Game\+Mode.\+hit\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Hit result of the cursor. 
+
+\mbox{\Hypertarget{class_game_mode_a01e79f1e24fe9681e06b53d81eb81293}\label{class_game_mode_a01e79f1e24fe9681e06b53d81eb81293}} 
+\index{Game\+Mode@{Game\+Mode}!selector@{selector}}
+\index{selector@{selector}!Game\+Mode@{Game\+Mode}}
+\subsubsection{\texorpdfstring{selector}{selector}}
+{\footnotesize\ttfamily Game\+Object Game\+Mode.\+selector\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Visual representation of the cursor in the world. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Game\+Modes/Game\+Mode.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,199 @@
+\hypertarget{class_construction_mode}{}\section{Construction\+Mode Class Reference}
+\label{class_construction_mode}\index{Construction\+Mode@{Construction\+Mode}}
+
+
+Class in charge of constructing new buildings.  
+
+
+Inheritance diagram for Construction\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_construction_mode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_construction_mode_a4229d5bd9df34fd90758404acd3b9cc8}{disable\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Disables the game mode. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_construction_mode_a4668815afe087d0cea35f8c7144e47f9}{set\+Cell\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Sets the cell\+Selected. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_construction_mode_a58599c3aac705627c3b0fd034d54092a}{game\+Mode\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Events of the Game mode. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_construction_mode_abc41d867b12bfe26c28bea8ce773614d}{place\+Building}} (\mbox{\hyperlink{class_cell}{Cell}} cell, Vector3 position, Game\+Object building, Quaternion rotation, orientation \+\_\+orientation)
+\begin{DoxyCompactList}\small\item\em Places a building by desired params. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_construction_mode_acb76129315318237f90ea4dd25fb57b9}{set\+Cells\+Ocupied}} (\mbox{\hyperlink{class_cell}{Cell}} cell, \mbox{\hyperlink{class_building}{Building}} building, Vector2\+Int dimensions, bool is\+Ocupied)
+\begin{DoxyCompactList}\small\item\em Sets the cells indicated ocuppied. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_construction_mode_aaf154f26d7cca5d1b8fd7a4d246616c6}{can\+Construct}} (\mbox{\hyperlink{class_cell}{Cell}} cell, Vector2\+Int dimension)
+\begin{DoxyCompactList}\small\item\em Determines if the desired location is suitable for construction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_construction_mode_a1bbac325b59030aeaae9a5ee5386f5a3}{enable\+Place\+Holder}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Enables or disables the place holder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_construction_mode_ad06e08c8ebf5e525d9ddf799cbf00c47}{set\+Building}} (int id)
+\begin{DoxyCompactList}\small\item\em Sets the building to construct in enable this mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_construction_mode_ac1fd69c80b3e6a1561a6353e1c15997e}{middle\+Point}}
+\begin{DoxyCompactList}\small\item\em Point of location for the place holder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class in charge of constructing new buildings. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_construction_mode_aaf154f26d7cca5d1b8fd7a4d246616c6}\label{class_construction_mode_aaf154f26d7cca5d1b8fd7a4d246616c6}} 
+\index{Construction\+Mode@{Construction\+Mode}!can\+Construct@{can\+Construct}}
+\index{can\+Construct@{can\+Construct}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{can\+Construct()}{canConstruct()}}
+{\footnotesize\ttfamily bool Construction\+Mode.\+can\+Construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{cell,  }\item[{Vector2\+Int}]{dimension }\end{DoxyParamCaption})}
+
+
+
+Determines if the desired location is suitable for construction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & \\
+\hline
+{\em dimension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_construction_mode_a4229d5bd9df34fd90758404acd3b9cc8}\label{class_construction_mode_a4229d5bd9df34fd90758404acd3b9cc8}} 
+\index{Construction\+Mode@{Construction\+Mode}!disable\+Mode@{disable\+Mode}}
+\index{disable\+Mode@{disable\+Mode}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{disable\+Mode()}{disableMode()}}
+{\footnotesize\ttfamily override void Construction\+Mode.\+disable\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Disables the game mode. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_mode_a5aea49bdae2459b78e1972dd0a34918e}{Game\+Mode}}.
+
+\mbox{\Hypertarget{class_construction_mode_a1bbac325b59030aeaae9a5ee5386f5a3}\label{class_construction_mode_a1bbac325b59030aeaae9a5ee5386f5a3}} 
+\index{Construction\+Mode@{Construction\+Mode}!enable\+Place\+Holder@{enable\+Place\+Holder}}
+\index{enable\+Place\+Holder@{enable\+Place\+Holder}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{enable\+Place\+Holder()}{enablePlaceHolder()}}
+{\footnotesize\ttfamily void Construction\+Mode.\+enable\+Place\+Holder (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the place holder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_construction_mode_a58599c3aac705627c3b0fd034d54092a}\label{class_construction_mode_a58599c3aac705627c3b0fd034d54092a}} 
+\index{Construction\+Mode@{Construction\+Mode}!game\+Mode\+Events@{game\+Mode\+Events}}
+\index{game\+Mode\+Events@{game\+Mode\+Events}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{game\+Mode\+Events()}{gameModeEvents()}}
+{\footnotesize\ttfamily override void Construction\+Mode.\+game\+Mode\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Events of the Game mode. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_mode_a32a61bf0dfef83cfc1724b92f3d50cdf}{Game\+Mode}}.
+
+\mbox{\Hypertarget{class_construction_mode_abc41d867b12bfe26c28bea8ce773614d}\label{class_construction_mode_abc41d867b12bfe26c28bea8ce773614d}} 
+\index{Construction\+Mode@{Construction\+Mode}!place\+Building@{place\+Building}}
+\index{place\+Building@{place\+Building}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{place\+Building()}{placeBuilding()}}
+{\footnotesize\ttfamily Game\+Object Construction\+Mode.\+place\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{cell,  }\item[{Vector3}]{position,  }\item[{Game\+Object}]{building,  }\item[{Quaternion}]{rotation,  }\item[{orientation}]{\+\_\+orientation }\end{DoxyParamCaption})}
+
+
+
+Places a building by desired params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & \\
+\hline
+{\em position} & \\
+\hline
+{\em building} & \\
+\hline
+{\em rotation} & \\
+\hline
+{\em \+\_\+orientation} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_construction_mode_ad06e08c8ebf5e525d9ddf799cbf00c47}\label{class_construction_mode_ad06e08c8ebf5e525d9ddf799cbf00c47}} 
+\index{Construction\+Mode@{Construction\+Mode}!set\+Building@{set\+Building}}
+\index{set\+Building@{set\+Building}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{set\+Building()}{setBuilding()}}
+{\footnotesize\ttfamily void Construction\+Mode.\+set\+Building (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Sets the building to construct in enable this mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_construction_mode_a4668815afe087d0cea35f8c7144e47f9}\label{class_construction_mode_a4668815afe087d0cea35f8c7144e47f9}} 
+\index{Construction\+Mode@{Construction\+Mode}!set\+Cell\+Selected@{set\+Cell\+Selected}}
+\index{set\+Cell\+Selected@{set\+Cell\+Selected}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{set\+Cell\+Selected()}{setCellSelected()}}
+{\footnotesize\ttfamily override void Construction\+Mode.\+set\+Cell\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the cell\+Selected. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_mode_af0110e3ce61ccc4d2f77d64ffb9eeecf}{Game\+Mode}}.
+
+\mbox{\Hypertarget{class_construction_mode_acb76129315318237f90ea4dd25fb57b9}\label{class_construction_mode_acb76129315318237f90ea4dd25fb57b9}} 
+\index{Construction\+Mode@{Construction\+Mode}!set\+Cells\+Ocupied@{set\+Cells\+Ocupied}}
+\index{set\+Cells\+Ocupied@{set\+Cells\+Ocupied}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{set\+Cells\+Ocupied()}{setCellsOcupied()}}
+{\footnotesize\ttfamily void Construction\+Mode.\+set\+Cells\+Ocupied (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{cell,  }\item[{\mbox{\hyperlink{class_building}{Building}}}]{building,  }\item[{Vector2\+Int}]{dimensions,  }\item[{bool}]{is\+Ocupied }\end{DoxyParamCaption})}
+
+
+
+Sets the cells indicated ocuppied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & \\
+\hline
+{\em building} & \\
+\hline
+{\em dimensions} & \\
+\hline
+{\em is\+Ocupied} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_construction_mode_ac1fd69c80b3e6a1561a6353e1c15997e}\label{class_construction_mode_ac1fd69c80b3e6a1561a6353e1c15997e}} 
+\index{Construction\+Mode@{Construction\+Mode}!middle\+Point@{middle\+Point}}
+\index{middle\+Point@{middle\+Point}!Construction\+Mode@{Construction\+Mode}}
+\subsubsection{\texorpdfstring{middle\+Point}{middlePoint}}
+{\footnotesize\ttfamily Vector3 Construction\+Mode.\+middle\+Point\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Point of location for the place holder. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Game\+Modes/Construction\+Mode.\+cs\end{DoxyCompactItemize}

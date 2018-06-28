@@ -1,0 +1,219 @@
+\hypertarget{class_cell}{}\section{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+Class that represents a cell in the level grid.  
+
+
+Inheritance diagram for Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_cell}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cell_a2943d1c01e920a04f78bd48bbb1db9b1}{set\+Coords}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Setter of the coords of the cell. \end{DoxyCompactList}\item 
+Vector2\+Int \mbox{\hyperlink{class_cell_ac964517dec897f8cbef491e6942603dd}{get\+Coords}} ()
+\begin{DoxyCompactList}\small\item\em Returns the cell coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a901695c1fdd8d8dde6601cbe60a19f6c}{set\+Is\+Ocupied}} (bool ocupied)
+\begin{DoxyCompactList}\small\item\em Sets if the cell is ocupied. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_af88aea83835a3e1c6bbf339a945fc994}{get\+Is\+Ocupied}} ()
+\begin{DoxyCompactList}\small\item\em Returns if the cell is ocuppied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_af6990e51b59b0b2b3ad5a20437c3d527}{set\+Anchor}} (Vector3 anchor)
+\begin{DoxyCompactList}\small\item\em Sets the variable anchor. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_cell_a8cb44e58153a75e75ee98790f51616e8}{get\+Anchor}} ()
+\begin{DoxyCompactList}\small\item\em Return the anchor variable. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_cell_a924b6308bc7956563759d9bd2605850e}{Calculate\+Construction\+Place}} (Vector2\+Int dimension)
+\begin{DoxyCompactList}\small\item\em Returns where the building should be placed based on the anchor and the dimension given. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_cell_aecb362e44d7117cb4ecb1961092bcb28}{action}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em overwritten methods from \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_cell_a415c2fd77ec3b53bed8115fddd311a6f}{set\+Building}} (\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} other)
+\begin{DoxyCompactList}\small\item\em Sets the building that is associated with this object. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_cell_ab32941221f7e2df38227961c8d8dbfec}{get\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Returns this as a building or if is not a building returns the one that this object is associated with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a77cdae6b479d62eeb10eeeb73a2170b7}\label{class_cell_a77cdae6b479d62eeb10eeeb73a2170b7}} 
+void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a75f654abcd35344190093ef358203ebe}\label{class_cell_a75f654abcd35344190093ef358203ebe}} 
+int {\bfseries Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_cell_a4818b5da03c8ba20807ffddcc3693fa4}\label{class_cell_a4818b5da03c8ba20807ffddcc3693fa4}} 
+float {\bfseries Production\+Boost}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that represents a cell in the level grid. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_aecb362e44d7117cb4ecb1961092bcb28}\label{class_cell_aecb362e44d7117cb4ecb1961092bcb28}} 
+\index{Cell@{Cell}!action@{action}}
+\index{action@{action}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily override void Cell.\+action (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+overwritten methods from \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_selectable_object_adb08e08703832f624d9bf62fc02208a8}{Selectable\+Object}}.
+
+\mbox{\Hypertarget{class_cell_a924b6308bc7956563759d9bd2605850e}\label{class_cell_a924b6308bc7956563759d9bd2605850e}} 
+\index{Cell@{Cell}!Calculate\+Construction\+Place@{Calculate\+Construction\+Place}}
+\index{Calculate\+Construction\+Place@{Calculate\+Construction\+Place}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{Calculate\+Construction\+Place()}{CalculateConstructionPlace()}}
+{\footnotesize\ttfamily Vector3 Cell.\+Calculate\+Construction\+Place (\begin{DoxyParamCaption}\item[{Vector2\+Int}]{dimension }\end{DoxyParamCaption})}
+
+
+
+Returns where the building should be placed based on the anchor and the dimension given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a8cb44e58153a75e75ee98790f51616e8}\label{class_cell_a8cb44e58153a75e75ee98790f51616e8}} 
+\index{Cell@{Cell}!get\+Anchor@{get\+Anchor}}
+\index{get\+Anchor@{get\+Anchor}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{get\+Anchor()}{getAnchor()}}
+{\footnotesize\ttfamily Vector3 Cell.\+get\+Anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the anchor variable. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_ab32941221f7e2df38227961c8d8dbfec}\label{class_cell_ab32941221f7e2df38227961c8d8dbfec}} 
+\index{Cell@{Cell}!get\+Building@{get\+Building}}
+\index{get\+Building@{get\+Building}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{get\+Building()}{getBuilding()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Cell.\+get\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns this as a building or if is not a building returns the one that this object is associated with. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_selectable_object_a12caa058f4c53aa5debb1004f1169202}{Selectable\+Object}}.
+
+\mbox{\Hypertarget{class_cell_ac964517dec897f8cbef491e6942603dd}\label{class_cell_ac964517dec897f8cbef491e6942603dd}} 
+\index{Cell@{Cell}!get\+Coords@{get\+Coords}}
+\index{get\+Coords@{get\+Coords}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{get\+Coords()}{getCoords()}}
+{\footnotesize\ttfamily Vector2\+Int Cell.\+get\+Coords (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the cell coordinates. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_af88aea83835a3e1c6bbf339a945fc994}\label{class_cell_af88aea83835a3e1c6bbf339a945fc994}} 
+\index{Cell@{Cell}!get\+Is\+Ocupied@{get\+Is\+Ocupied}}
+\index{get\+Is\+Ocupied@{get\+Is\+Ocupied}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{get\+Is\+Ocupied()}{getIsOcupied()}}
+{\footnotesize\ttfamily bool Cell.\+get\+Is\+Ocupied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns if the cell is ocuppied. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_af6990e51b59b0b2b3ad5a20437c3d527}\label{class_cell_af6990e51b59b0b2b3ad5a20437c3d527}} 
+\index{Cell@{Cell}!set\+Anchor@{set\+Anchor}}
+\index{set\+Anchor@{set\+Anchor}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{set\+Anchor()}{setAnchor()}}
+{\footnotesize\ttfamily void Cell.\+set\+Anchor (\begin{DoxyParamCaption}\item[{Vector3}]{anchor }\end{DoxyParamCaption})}
+
+
+
+Sets the variable anchor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anchor} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a415c2fd77ec3b53bed8115fddd311a6f}\label{class_cell_a415c2fd77ec3b53bed8115fddd311a6f}} 
+\index{Cell@{Cell}!set\+Building@{set\+Building}}
+\index{set\+Building@{set\+Building}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{set\+Building()}{setBuilding()}}
+{\footnotesize\ttfamily override void Cell.\+set\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the building that is associated with this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_selectable_object_a3817f94af010c5cc5d2967a145b39f21}{Selectable\+Object}}.
+
+\mbox{\Hypertarget{class_cell_a2943d1c01e920a04f78bd48bbb1db9b1}\label{class_cell_a2943d1c01e920a04f78bd48bbb1db9b1}} 
+\index{Cell@{Cell}!set\+Coords@{set\+Coords}}
+\index{set\+Coords@{set\+Coords}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{set\+Coords()}{setCoords()}}
+{\footnotesize\ttfamily void Cell.\+set\+Coords (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Setter of the coords of the cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a901695c1fdd8d8dde6601cbe60a19f6c}\label{class_cell_a901695c1fdd8d8dde6601cbe60a19f6c}} 
+\index{Cell@{Cell}!set\+Is\+Ocupied@{set\+Is\+Ocupied}}
+\index{set\+Is\+Ocupied@{set\+Is\+Ocupied}!Cell@{Cell}}
+\subsubsection{\texorpdfstring{set\+Is\+Ocupied()}{setIsOcupied()}}
+{\footnotesize\ttfamily void Cell.\+set\+Is\+Ocupied (\begin{DoxyParamCaption}\item[{bool}]{ocupied }\end{DoxyParamCaption})}
+
+
+
+Sets if the cell is ocupied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ocupied} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Map/Cell.\+cs\end{DoxyCompactItemize}

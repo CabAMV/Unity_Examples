@@ -1,0 +1,142 @@
+\hypertarget{class_workers_manager}{}\section{Workers\+Manager Class Reference}
+\label{class_workers_manager}\index{Workers\+Manager@{Workers\+Manager}}
+
+
+This class manages which of the workers is active and gives them orders. Also recives which orders are still valid and which not.  
+
+
+Inheritance diagram for Workers\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_workers_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_workers_manager_ae24e5cff6ca762e22b11ae022a427047}{task\+Workers}} (Game\+Object building, int num)
+\begin{DoxyCompactList}\small\item\em Adds the number of tasks given to the list of tasks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_workers_manager_a5e3d8d9573ed24b8ff2b8d2e1330ca63}{make\+Worker\+Idle}} (\mbox{\hyperlink{class_worker}{Worker}} worker)
+\begin{DoxyCompactList}\small\item\em Removes a worker from being active and makes it idle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_workers_manager_afd831423d7d42862a269d6a92768e5c3}{add\+Worker}} (\mbox{\hyperlink{class_worker}{Worker}} worker)
+\begin{DoxyCompactList}\small\item\em Adds a worker to the idle\+Workers list at the beggining of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_workers_manager_aad4e89044cdc4a0cf7445b2fc1b445aa}{Remove\+Worker}} (\mbox{\hyperlink{class_worker}{Worker}} worker)
+\begin{DoxyCompactList}\small\item\em Removes a worker from the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_workers_manager_adadd929b4978dfbe975ccb733d031bf9}{is\+Worker\+Active}} (\mbox{\hyperlink{class_worker}{Worker}} worker)
+\begin{DoxyCompactList}\small\item\em Returns if a worker is active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_workers_manager_aae249c0ee119a7cfc94a45cea76bfcfc}{Remove\+Task}} (Game\+Object task)
+\begin{DoxyCompactList}\small\item\em Recursive method that removes the given tasks form the tasks list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_workers_manager_a347ee1bef7154226d46273026c9a463e}\label{class_workers_manager_a347ee1bef7154226d46273026c9a463e}} 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries Game\+Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages which of the workers is active and gives them orders. Also recives which orders are still valid and which not. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_workers_manager_afd831423d7d42862a269d6a92768e5c3}\label{class_workers_manager_afd831423d7d42862a269d6a92768e5c3}} 
+\index{Workers\+Manager@{Workers\+Manager}!add\+Worker@{add\+Worker}}
+\index{add\+Worker@{add\+Worker}!Workers\+Manager@{Workers\+Manager}}
+\subsubsection{\texorpdfstring{add\+Worker()}{addWorker()}}
+{\footnotesize\ttfamily void Workers\+Manager.\+add\+Worker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_worker}{Worker}}}]{worker }\end{DoxyParamCaption})}
+
+
+
+Adds a worker to the idle\+Workers list at the beggining of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_workers_manager_adadd929b4978dfbe975ccb733d031bf9}\label{class_workers_manager_adadd929b4978dfbe975ccb733d031bf9}} 
+\index{Workers\+Manager@{Workers\+Manager}!is\+Worker\+Active@{is\+Worker\+Active}}
+\index{is\+Worker\+Active@{is\+Worker\+Active}!Workers\+Manager@{Workers\+Manager}}
+\subsubsection{\texorpdfstring{is\+Worker\+Active()}{isWorkerActive()}}
+{\footnotesize\ttfamily bool Workers\+Manager.\+is\+Worker\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_worker}{Worker}}}]{worker }\end{DoxyParamCaption})}
+
+
+
+Returns if a worker is active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_workers_manager_a5e3d8d9573ed24b8ff2b8d2e1330ca63}\label{class_workers_manager_a5e3d8d9573ed24b8ff2b8d2e1330ca63}} 
+\index{Workers\+Manager@{Workers\+Manager}!make\+Worker\+Idle@{make\+Worker\+Idle}}
+\index{make\+Worker\+Idle@{make\+Worker\+Idle}!Workers\+Manager@{Workers\+Manager}}
+\subsubsection{\texorpdfstring{make\+Worker\+Idle()}{makeWorkerIdle()}}
+{\footnotesize\ttfamily void Workers\+Manager.\+make\+Worker\+Idle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_worker}{Worker}}}]{worker }\end{DoxyParamCaption})}
+
+
+
+Removes a worker from being active and makes it idle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_workers_manager_aae249c0ee119a7cfc94a45cea76bfcfc}\label{class_workers_manager_aae249c0ee119a7cfc94a45cea76bfcfc}} 
+\index{Workers\+Manager@{Workers\+Manager}!Remove\+Task@{Remove\+Task}}
+\index{Remove\+Task@{Remove\+Task}!Workers\+Manager@{Workers\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Task()}{RemoveTask()}}
+{\footnotesize\ttfamily void Workers\+Manager.\+Remove\+Task (\begin{DoxyParamCaption}\item[{Game\+Object}]{task }\end{DoxyParamCaption})}
+
+
+
+Recursive method that removes the given tasks form the tasks list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_workers_manager_aad4e89044cdc4a0cf7445b2fc1b445aa}\label{class_workers_manager_aad4e89044cdc4a0cf7445b2fc1b445aa}} 
+\index{Workers\+Manager@{Workers\+Manager}!Remove\+Worker@{Remove\+Worker}}
+\index{Remove\+Worker@{Remove\+Worker}!Workers\+Manager@{Workers\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Worker()}{RemoveWorker()}}
+{\footnotesize\ttfamily void Workers\+Manager.\+Remove\+Worker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_worker}{Worker}}}]{worker }\end{DoxyParamCaption})}
+
+
+
+Removes a worker from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_workers_manager_ae24e5cff6ca762e22b11ae022a427047}\label{class_workers_manager_ae24e5cff6ca762e22b11ae022a427047}} 
+\index{Workers\+Manager@{Workers\+Manager}!task\+Workers@{task\+Workers}}
+\index{task\+Workers@{task\+Workers}!Workers\+Manager@{Workers\+Manager}}
+\subsubsection{\texorpdfstring{task\+Workers()}{taskWorkers()}}
+{\footnotesize\ttfamily void Workers\+Manager.\+task\+Workers (\begin{DoxyParamCaption}\item[{Game\+Object}]{building,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds the number of tasks given to the list of tasks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & \\
+\hline
+{\em num} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Workers/Workers\+Manager.\+cs\end{DoxyCompactItemize}

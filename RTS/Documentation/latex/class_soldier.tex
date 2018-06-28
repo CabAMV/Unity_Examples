@@ -1,0 +1,192 @@
+\hypertarget{class_soldier}{}\section{Soldier Class Reference}
+\label{class_soldier}\index{Soldier@{Soldier}}
+
+
+Component in charge of controlling the movement and attack of the soldier.  
+
+
+Inheritance diagram for Soldier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_soldier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_soldier_a8eedc67afe2294da5cefb4712e719692}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em Spawns a projectile facing the canon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_ac0b4aade7a20111f04f4cb4c8eecf991}{add\+Target}} (Transform target)
+\begin{DoxyCompactList}\small\item\em Adds a new target to the target\+List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_a2430cb561be4df43effa6e322a132316}{remove\+Target}} (Transform target)
+\begin{DoxyCompactList}\small\item\em Removes the given target from the target list. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_soldier_afda3f1b1994521eb21aeede43f291838}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Returns the damage this soldiers applies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_soldier_a07fc376e3db48766643fe0afeba344a8}\label{class_soldier_a07fc376e3db48766643fe0afeba344a8}} 
+void {\bfseries Apply\+Damage} (\mbox{\hyperlink{interface_i_shooter}{I\+Shooter}} instigator)
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_soldier_a0295af34003267c45e4bbe1ce31fcdc2}{get\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Returns this soldiers player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_a302b0394d3480d637233770145a28e36}{set\+Player}} (\mbox{\hyperlink{class_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em Sets this soldiers player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_acac1c7daba930c5322aedffb7649a68c}{set\+Damage}} (float damage)
+\begin{DoxyCompactList}\small\item\em Sets the damage to apply. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_ada823422571bc252817e9a3ed2e1db67}{set\+Life}} (float life)
+\begin{DoxyCompactList}\small\item\em Sets the life of this player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_adf9e89f9bf3b2a2dcdc00c91b2d40cfc}{set\+Destination}} (Vector3 destiny)
+\begin{DoxyCompactList}\small\item\em Sets the the destination of this player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Component in charge of controlling the movement and attack of the soldier. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_soldier_ac0b4aade7a20111f04f4cb4c8eecf991}\label{class_soldier_ac0b4aade7a20111f04f4cb4c8eecf991}} 
+\index{Soldier@{Soldier}!add\+Target@{add\+Target}}
+\index{add\+Target@{add\+Target}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{add\+Target()}{addTarget()}}
+{\footnotesize\ttfamily void Soldier.\+add\+Target (\begin{DoxyParamCaption}\item[{Transform}]{target }\end{DoxyParamCaption})}
+
+
+
+Adds a new target to the target\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}.
+
+\mbox{\Hypertarget{class_soldier_afda3f1b1994521eb21aeede43f291838}\label{class_soldier_afda3f1b1994521eb21aeede43f291838}} 
+\index{Soldier@{Soldier}!get\+Damage@{get\+Damage}}
+\index{get\+Damage@{get\+Damage}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{get\+Damage()}{getDamage()}}
+{\footnotesize\ttfamily float Soldier.\+get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the damage this soldiers applies. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}.
+
+\mbox{\Hypertarget{class_soldier_a0295af34003267c45e4bbe1ce31fcdc2}\label{class_soldier_a0295af34003267c45e4bbe1ce31fcdc2}} 
+\index{Soldier@{Soldier}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Soldier.\+get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns this soldiers player. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_damageable}{I\+Damageable}}.
+
+\mbox{\Hypertarget{class_soldier_a2430cb561be4df43effa6e322a132316}\label{class_soldier_a2430cb561be4df43effa6e322a132316}} 
+\index{Soldier@{Soldier}!remove\+Target@{remove\+Target}}
+\index{remove\+Target@{remove\+Target}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{remove\+Target()}{removeTarget()}}
+{\footnotesize\ttfamily void Soldier.\+remove\+Target (\begin{DoxyParamCaption}\item[{Transform}]{target }\end{DoxyParamCaption})}
+
+
+
+Removes the given target from the target list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}.
+
+\mbox{\Hypertarget{class_soldier_acac1c7daba930c5322aedffb7649a68c}\label{class_soldier_acac1c7daba930c5322aedffb7649a68c}} 
+\index{Soldier@{Soldier}!set\+Damage@{set\+Damage}}
+\index{set\+Damage@{set\+Damage}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{set\+Damage()}{setDamage()}}
+{\footnotesize\ttfamily void Soldier.\+set\+Damage (\begin{DoxyParamCaption}\item[{float}]{damage }\end{DoxyParamCaption})}
+
+
+
+Sets the damage to apply. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_soldier_adf9e89f9bf3b2a2dcdc00c91b2d40cfc}\label{class_soldier_adf9e89f9bf3b2a2dcdc00c91b2d40cfc}} 
+\index{Soldier@{Soldier}!set\+Destination@{set\+Destination}}
+\index{set\+Destination@{set\+Destination}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{set\+Destination()}{setDestination()}}
+{\footnotesize\ttfamily void Soldier.\+set\+Destination (\begin{DoxyParamCaption}\item[{Vector3}]{destiny }\end{DoxyParamCaption})}
+
+
+
+Sets the the destination of this player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destiny} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_soldier_ada823422571bc252817e9a3ed2e1db67}\label{class_soldier_ada823422571bc252817e9a3ed2e1db67}} 
+\index{Soldier@{Soldier}!set\+Life@{set\+Life}}
+\index{set\+Life@{set\+Life}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{set\+Life()}{setLife()}}
+{\footnotesize\ttfamily void Soldier.\+set\+Life (\begin{DoxyParamCaption}\item[{float}]{life }\end{DoxyParamCaption})}
+
+
+
+Sets the life of this player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em life} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_soldier_a302b0394d3480d637233770145a28e36}\label{class_soldier_a302b0394d3480d637233770145a28e36}} 
+\index{Soldier@{Soldier}!set\+Player@{set\+Player}}
+\index{set\+Player@{set\+Player}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{set\+Player()}{setPlayer()}}
+{\footnotesize\ttfamily void Soldier.\+set\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+
+
+Sets this soldiers player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_soldier_a8eedc67afe2294da5cefb4712e719692}\label{class_soldier_a8eedc67afe2294da5cefb4712e719692}} 
+\index{Soldier@{Soldier}!shoot@{shoot}}
+\index{shoot@{shoot}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Soldier.\+shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawns a projectile facing the canon. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/Soldier.\+cs\end{DoxyCompactItemize}

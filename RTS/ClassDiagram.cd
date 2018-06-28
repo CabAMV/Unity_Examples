@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Barrack" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAQAAACAAQAAAAAEBAAGQAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\Buildings\Barrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Building" Collapsed="true">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIUABEARBCAAKEAAIAAAIAACAEhQQCEQEAIBgAAIgAg=</HashCode>
+      <FileName>Assets\Scripts\Buildings\Building.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Base" Collapsed="true">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConicVision" Collapsed="true">
+    <Position X="7.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\ConicVision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstructCountdown" Collapsed="true">
+    <Position X="3.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgCAAgBgAACAAAAIAAAAAAAAQQARAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\ConstructCountdown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Farmland" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAEGEAAhAACCAAAAABAAAQAAAARAAAAAAgQgA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\Farmland.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Forest" Collapsed="true">
+    <Position X="11" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACEAAAAAAAAAAAAAAAQAAAAEAACAAAAAACA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\Forest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ForestTree" Collapsed="true">
+    <Position X="13" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAQABhACiAAIAAAAAQAAAAAIATAAAhAAgA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\ForestTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tree" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAgCAAAAgACiAAAAAAAAAAAAAAYATAAAgAAgA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\Tree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TurretMiniGun" Collapsed="true">
+    <Position X="16.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICQgCgBEACAAgAQAIAAQACAAAAiAAAiAAARLAEACAAA=</HashCode>
+      <FileName>Assets\Scripts\Buildings\TurretMiniGun.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CameraConfig" Collapsed="true">
+    <Position X="7.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCCAAAAACgAAAAAIACAQAAAAgAAASAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Camera\CameraConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraController" Collapsed="true">
+    <Position X="3.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAEAFAAyAQAIAgAAAAAAAABAAAAQAAAACAAIIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Camera\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpringArm" Collapsed="true">
+    <Position X="5.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBCIYIAAAygCAEBEIACAQACCQgAAASBBAATAEAAAQAQ=</HashCode>
+      <FileName>Assets\Scripts\Camera\SpringArm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="21.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAACAAACAABiAAAEAAAAQAAAAEAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIGameModeManager" Collapsed="true">
+    <Position X="20.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQIBAQBCAAAgAQAAACAAAAAAAAAIAgAAAIECQCAIA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\AIGameModeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameModeManager" Collapsed="true">
+    <Position X="22.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAgKOAAiIAAAAAAAAABIAAAAAAACAAAABAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\GameModeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameMode" Collapsed="true">
+    <Position X="18.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACgAAEoAgAAAAAAAAABAgAAEAAAAQgAIAIAAhA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\GameMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SelectionMode" Collapsed="true">
+    <Position X="15.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAgAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\SelectionMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShootMode" Collapsed="true">
+    <Position X="17.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAiAIAQAAAAAAAAAAAAAAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\ShootMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIMode" Collapsed="true">
+    <Position X="19.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\UIMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstructionMode" Collapsed="true">
+    <Position X="21" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAACAACAIAAAAAAAgAgAAAAAQAAAQAKAAAEIAAgA=</HashCode>
+      <FileName>Assets\Scripts\GameModes\ConstructionMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cell" Collapsed="true">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQABBAAAQSAUAAAABAAAAEAAABFQAAABAAAAAAAAYAA=</HashCode>
+      <FileName>Assets\Scripts\Map\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map" Collapsed="true">
+    <Position X="11" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAWcAAAWAEQEQUQGAEUgAAFAAAQAGAIIHIAAAAASA=</HashCode>
+      <FileName>Assets\Scripts\Map\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildingPlaceHolder" Collapsed="true">
+    <Position X="19.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAQBCAAIAAAAAAAAAAAEAAAQAAAEAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\BuildingPlaceHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PopUpResource" Collapsed="true">
+    <Position X="17.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABgAAAEAAAAAAAECAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PopUpResource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAQAggAAAAAAAAAAAAAAAIAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAABARAAgQAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Resources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SelectableObject" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBEAABAAAAQAAAAAAAAAAAAAQAAAAAQAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\SelectableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Singleton&lt;T&gt;" Collapsed="true">
+    <Position X="11" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Soldier" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIVgCAAEECAAgwAAAAAAACAAAFAAAICBwAARAEAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Soldier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="cameraConfig" Collapsed="true">
+    <Position X="13" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAAAAAAAAAIACAQAAAAgAAASAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Camera\SpringArm.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="IDamageable" Collapsed="true">
+    <Position X="7.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IDamageable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IShooter" Collapsed="true">
+    <Position X="5.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAAAAAAAAQAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IShooter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="orientation" Collapsed="true">
+    <Position X="15.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAQ=</HashCode>
+      <FileName>Assets\Scripts\BuildingPlaceHolder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

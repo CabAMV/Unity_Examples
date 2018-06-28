@@ -1,0 +1,141 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+\mbox{\hyperlink{class_base}{Base}} class in charge of controlling the actions of a player either human or AI.  
+
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_workers_manager}{Workers\+Manager}} \mbox{\hyperlink{class_player_a6f9664fa87f4c415c7dcdc4b54410d1e}{get\+Workers\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Retunrs the workersmanager \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_mode}{Game\+Mode}} \mbox{\hyperlink{class_player_aaa2486d0dcaa57a4eb757b1e9d02d73f}{get\+Current\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current active game mode \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_mode}{Game\+Mode}} \mbox{\hyperlink{class_player_a564978fc1c003f5f2e74241a6de06d78}{get\+Construction\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Returns the construction game mode to use its funtionality. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a5f7760d9cc0bd9714af21538a0eef97e}\label{class_player_a5f7760d9cc0bd9714af21538a0eef97e}} 
+void {\bfseries set\+Rival\+Base} (\mbox{\hyperlink{class_base}{Base}} \+\_\+base)
+\item 
+\mbox{\Hypertarget{class_player_a55fadb3cf934e3da90b2c207962adcbc}\label{class_player_a55fadb3cf934e3da90b2c207962adcbc}} 
+\mbox{\hyperlink{class_base}{Base}} {\bfseries get\+Rival\+Base} ()
+\item 
+\mbox{\Hypertarget{class_player_af2977bb82baa3dcf4631678f4e4b9a88}\label{class_player_af2977bb82baa3dcf4631678f4e4b9a88}} 
+virtual void {\bfseries Add\+Building} (\mbox{\hyperlink{class_building}{Building}} building)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resources}{Resources}} \mbox{\hyperlink{class_player_a97bf2081445e8ee94ece51f2cd451c95}{resources}}
+\begin{DoxyCompactList}\small\item\em Storage of the resources of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a1399b763f72b721482cc940aba6031df}\label{class_player_a1399b763f72b721482cc940aba6031df}} 
+virtual void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_mode}{Game\+Mode}} \mbox{\hyperlink{class_player_a9d353d318c614a9b9bb0062728d73583}{construction\+Mode}}
+\begin{DoxyCompactList}\small\item\em Construction gamemode functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_workers_manager}{Workers\+Manager}} \mbox{\hyperlink{class_player_a54699f183e21ab9eee14dac9418c706b}{workers\+Manager}}
+\begin{DoxyCompactList}\small\item\em Manager responsible for the workers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a04a0d92687b3fee8f7d6e3f9d3bcb2aa}\label{class_player_a04a0d92687b3fee8f7d6e3f9d3bcb2aa}} 
+\mbox{\hyperlink{class_base}{Base}} {\bfseries rival\+Base}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_base}{Base}} class in charge of controlling the actions of a player either human or AI. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a564978fc1c003f5f2e74241a6de06d78}\label{class_player_a564978fc1c003f5f2e74241a6de06d78}} 
+\index{Player@{Player}!get\+Construction\+Mode@{get\+Construction\+Mode}}
+\index{get\+Construction\+Mode@{get\+Construction\+Mode}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Construction\+Mode()}{getConstructionMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_mode}{Game\+Mode}} Player.\+get\+Construction\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the construction game mode to use its funtionality. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_aaa2486d0dcaa57a4eb757b1e9d02d73f}\label{class_player_aaa2486d0dcaa57a4eb757b1e9d02d73f}} 
+\index{Player@{Player}!get\+Current\+Mode@{get\+Current\+Mode}}
+\index{get\+Current\+Mode@{get\+Current\+Mode}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Current\+Mode()}{getCurrentMode()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_game_mode}{Game\+Mode}} Player.\+get\+Current\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the current active game mode 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_game_mode_manager_a11cd556a3f6c2a97136de40bbf62633c}{Game\+Mode\+Manager}}.
+
+\mbox{\Hypertarget{class_player_a6f9664fa87f4c415c7dcdc4b54410d1e}\label{class_player_a6f9664fa87f4c415c7dcdc4b54410d1e}} 
+\index{Player@{Player}!get\+Workers\+Manager@{get\+Workers\+Manager}}
+\index{get\+Workers\+Manager@{get\+Workers\+Manager}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Workers\+Manager()}{getWorkersManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_workers_manager}{Workers\+Manager}} Player.\+get\+Workers\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retunrs the workersmanager 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_a9d353d318c614a9b9bb0062728d73583}\label{class_player_a9d353d318c614a9b9bb0062728d73583}} 
+\index{Player@{Player}!construction\+Mode@{construction\+Mode}}
+\index{construction\+Mode@{construction\+Mode}!Player@{Player}}
+\subsubsection{\texorpdfstring{construction\+Mode}{constructionMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_mode}{Game\+Mode}} Player.\+construction\+Mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construction gamemode functionality. 
+
+\mbox{\Hypertarget{class_player_a97bf2081445e8ee94ece51f2cd451c95}\label{class_player_a97bf2081445e8ee94ece51f2cd451c95}} 
+\index{Player@{Player}!resources@{resources}}
+\index{resources@{resources}!Player@{Player}}
+\subsubsection{\texorpdfstring{resources}{resources}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resources}{Resources}} Player.\+resources}
+
+
+
+Storage of the resources of the game. 
+
+\mbox{\Hypertarget{class_player_a54699f183e21ab9eee14dac9418c706b}\label{class_player_a54699f183e21ab9eee14dac9418c706b}} 
+\index{Player@{Player}!workers\+Manager@{workers\+Manager}}
+\index{workers\+Manager@{workers\+Manager}!Player@{Player}}
+\subsubsection{\texorpdfstring{workers\+Manager}{workersManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_workers_manager}{Workers\+Manager}} Player.\+workers\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Manager responsible for the workers. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Game\+Modes/Player.\+cs\end{DoxyCompactItemize}

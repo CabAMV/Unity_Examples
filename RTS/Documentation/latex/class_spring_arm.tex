@@ -1,0 +1,192 @@
+\hypertarget{class_spring_arm}{}\section{Spring\+Arm Class Reference}
+\label{class_spring_arm}\index{Spring\+Arm@{Spring\+Arm}}
+
+
+Class that acts as an automatic spring arm by the given configuration.  
+
+
+Inheritance diagram for Spring\+Arm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_spring_arm}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spring_arm_a04b2467d564ee5c84f5c899397ef6a7f}{change\+Target}} (\mbox{\hyperlink{structcamera_config}{camera\+Config}} new\+Target)
+\begin{DoxyCompactList}\small\item\em Changes the target to follow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcamera_config}{camera\+Config}} \mbox{\hyperlink{class_spring_arm_a42c1c7151c8691997160b4aa6fb7dc62}{get\+Config}} ()
+\begin{DoxyCompactList}\small\item\em Returns the actual configuration of the arm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spring_arm_a316922f360fb101c0a219720771b6d88}{add\+Rotation}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Increments the actual rotation by the rotation given. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_spring_arm_ae6f57a311c474a058fce74a4450db6bf}{get\+Rotation}} ()
+\begin{DoxyCompactList}\small\item\em Returns the actual rotation of the arm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spring_arm_acce988449ddf120825cc02b1dce3fb1c}{set\+Arm\+Lenght}} (float lenght)
+\begin{DoxyCompactList}\small\item\em Sets the length of the arm. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spring_arm_a92257d8d0f3e1e339569a22eea574784}{get\+Arm\+Lenght}} ()
+\begin{DoxyCompactList}\small\item\em Returns the arm length. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spring_arm_ad485a3416c203ebd091f4b4d296d832b}{set\+Use\+Rotation\+Limits}} (bool x, bool y, bool z)
+\begin{DoxyCompactList}\small\item\em Sets the rotation limits are in use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spring_arm_a445cee996dc3be417035da008f4a840a}{set\+Min\+Limits}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Sets the minimum angle limits \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spring_arm_ad1d6e509121e9c4f7e5551801a3f3746}{set\+Max\+Limits}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Sets the maximum angle limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that acts as an automatic spring arm by the given configuration. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spring_arm_a316922f360fb101c0a219720771b6d88}\label{class_spring_arm_a316922f360fb101c0a219720771b6d88}} 
+\index{Spring\+Arm@{Spring\+Arm}!add\+Rotation@{add\+Rotation}}
+\index{add\+Rotation@{add\+Rotation}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{add\+Rotation()}{addRotation()}}
+{\footnotesize\ttfamily void Spring\+Arm.\+add\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Increments the actual rotation by the rotation given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spring_arm_a04b2467d564ee5c84f5c899397ef6a7f}\label{class_spring_arm_a04b2467d564ee5c84f5c899397ef6a7f}} 
+\index{Spring\+Arm@{Spring\+Arm}!change\+Target@{change\+Target}}
+\index{change\+Target@{change\+Target}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{change\+Target()}{changeTarget()}}
+{\footnotesize\ttfamily void Spring\+Arm.\+change\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcamera_config}{camera\+Config}}}]{new\+Target }\end{DoxyParamCaption})}
+
+
+
+Changes the target to follow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spring_arm_a92257d8d0f3e1e339569a22eea574784}\label{class_spring_arm_a92257d8d0f3e1e339569a22eea574784}} 
+\index{Spring\+Arm@{Spring\+Arm}!get\+Arm\+Lenght@{get\+Arm\+Lenght}}
+\index{get\+Arm\+Lenght@{get\+Arm\+Lenght}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{get\+Arm\+Lenght()}{getArmLenght()}}
+{\footnotesize\ttfamily float Spring\+Arm.\+get\+Arm\+Lenght (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the arm length. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spring_arm_a42c1c7151c8691997160b4aa6fb7dc62}\label{class_spring_arm_a42c1c7151c8691997160b4aa6fb7dc62}} 
+\index{Spring\+Arm@{Spring\+Arm}!get\+Config@{get\+Config}}
+\index{get\+Config@{get\+Config}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{get\+Config()}{getConfig()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcamera_config}{camera\+Config}} Spring\+Arm.\+get\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the actual configuration of the arm. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spring_arm_ae6f57a311c474a058fce74a4450db6bf}\label{class_spring_arm_ae6f57a311c474a058fce74a4450db6bf}} 
+\index{Spring\+Arm@{Spring\+Arm}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily Vector3 Spring\+Arm.\+get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the actual rotation of the arm. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spring_arm_acce988449ddf120825cc02b1dce3fb1c}\label{class_spring_arm_acce988449ddf120825cc02b1dce3fb1c}} 
+\index{Spring\+Arm@{Spring\+Arm}!set\+Arm\+Lenght@{set\+Arm\+Lenght}}
+\index{set\+Arm\+Lenght@{set\+Arm\+Lenght}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{set\+Arm\+Lenght()}{setArmLenght()}}
+{\footnotesize\ttfamily void Spring\+Arm.\+set\+Arm\+Lenght (\begin{DoxyParamCaption}\item[{float}]{lenght }\end{DoxyParamCaption})}
+
+
+
+Sets the length of the arm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lenght} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spring_arm_ad1d6e509121e9c4f7e5551801a3f3746}\label{class_spring_arm_ad1d6e509121e9c4f7e5551801a3f3746}} 
+\index{Spring\+Arm@{Spring\+Arm}!set\+Max\+Limits@{set\+Max\+Limits}}
+\index{set\+Max\+Limits@{set\+Max\+Limits}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{set\+Max\+Limits()}{setMaxLimits()}}
+{\footnotesize\ttfamily void Spring\+Arm.\+set\+Max\+Limits (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Sets the maximum angle limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spring_arm_a445cee996dc3be417035da008f4a840a}\label{class_spring_arm_a445cee996dc3be417035da008f4a840a}} 
+\index{Spring\+Arm@{Spring\+Arm}!set\+Min\+Limits@{set\+Min\+Limits}}
+\index{set\+Min\+Limits@{set\+Min\+Limits}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{set\+Min\+Limits()}{setMinLimits()}}
+{\footnotesize\ttfamily void Spring\+Arm.\+set\+Min\+Limits (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Sets the minimum angle limits 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spring_arm_ad485a3416c203ebd091f4b4d296d832b}\label{class_spring_arm_ad485a3416c203ebd091f4b4d296d832b}} 
+\index{Spring\+Arm@{Spring\+Arm}!set\+Use\+Rotation\+Limits@{set\+Use\+Rotation\+Limits}}
+\index{set\+Use\+Rotation\+Limits@{set\+Use\+Rotation\+Limits}!Spring\+Arm@{Spring\+Arm}}
+\subsubsection{\texorpdfstring{set\+Use\+Rotation\+Limits()}{setUseRotationLimits()}}
+{\footnotesize\ttfamily void Spring\+Arm.\+set\+Use\+Rotation\+Limits (\begin{DoxyParamCaption}\item[{bool}]{x,  }\item[{bool}]{y,  }\item[{bool}]{z }\end{DoxyParamCaption})}
+
+
+
+Sets the rotation limits are in use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Camera/Spring\+Arm.\+cs\end{DoxyCompactItemize}

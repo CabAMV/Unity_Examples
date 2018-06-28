@@ -1,0 +1,197 @@
+\hypertarget{class_turret_mini_gun}{}\section{Turret\+Mini\+Gun Class Reference}
+\label{class_turret_mini_gun}\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+
+
+Automatic turret with a conic vision that shoots the enemy units.  
+
+
+Inheritance diagram for Turret\+Mini\+Gun\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_turret_mini_gun}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_turret_mini_gun_a85ac788b061c745f1b920e749771ec1c}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em Spawns a projectile and sends it forward by a given force. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_turret_mini_gun_a1fddb95fa87c0de06be43cfbc9e97c81}{press\+Trigger}} ()
+\begin{DoxyCompactList}\small\item\em Apllies the delay in the shoots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turret_mini_gun_a355f34666865396437c32fab8d2a3b51}{add\+Target}} (Transform target)
+\begin{DoxyCompactList}\small\item\em Adds a new target to the enemy\+Target list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turret_mini_gun_a8d975f5b522d64c92b69852af5c58db6}{remove\+Target}} (Transform target)
+\begin{DoxyCompactList}\small\item\em Removes a target from the enemy\+Target list. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_turret_mini_gun_ac1c64dbcd1857130d1bd6786c6e695b9}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Return the amount of damage to make the objetive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turret_mini_gun_ab783f041cc7969bc9477a2c33ff4fc92}{set\+Is\+Shooting}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Setter for is\+Shooting variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turret_mini_gun_a31f68aef8df52f09916e4540c47c9fde}{rotate}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Rotates the mobile part of the turret by a given amount in each axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turret_mini_gun_a38e7de5216effbf5855e7e2f0fd27e08}{play\+Manually}} (bool pressed)
+\begin{DoxyCompactList}\small\item\em Called from the game\+Mode\+Manager in \mbox{\hyperlink{class_shoot_mode}{Shoot\+Mode}}. checks the inputs to shoot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turret_mini_gun_a7119ae1a159a7fde64f9cfd1b8a3c35f}{activate\+Aim\+Reticle}} (bool activate)
+\begin{DoxyCompactList}\small\item\em Activates or deactivates the aim\+Reticle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turret_mini_gun_af03f5877727b9a7fb3d3b48c4a359af4}\label{class_turret_mini_gun_af03f5877727b9a7fb3d3b48c4a359af4}} 
+override void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_turret_mini_gun_aab4135ca9b906ccc31c31991edd4e0c6}\label{class_turret_mini_gun_aab4135ca9b906ccc31c31991edd4e0c6}} 
+override void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Automatic turret with a conic vision that shoots the enemy units. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_turret_mini_gun_a7119ae1a159a7fde64f9cfd1b8a3c35f}\label{class_turret_mini_gun_a7119ae1a159a7fde64f9cfd1b8a3c35f}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!activate\+Aim\+Reticle@{activate\+Aim\+Reticle}}
+\index{activate\+Aim\+Reticle@{activate\+Aim\+Reticle}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{activate\+Aim\+Reticle()}{activateAimReticle()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+activate\+Aim\+Reticle (\begin{DoxyParamCaption}\item[{bool}]{activate }\end{DoxyParamCaption})}
+
+
+
+Activates or deactivates the aim\+Reticle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em activate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turret_mini_gun_a355f34666865396437c32fab8d2a3b51}\label{class_turret_mini_gun_a355f34666865396437c32fab8d2a3b51}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!add\+Target@{add\+Target}}
+\index{add\+Target@{add\+Target}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{add\+Target()}{addTarget()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+add\+Target (\begin{DoxyParamCaption}\item[{Transform}]{target }\end{DoxyParamCaption})}
+
+
+
+Adds a new target to the enemy\+Target list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}.
+
+\mbox{\Hypertarget{class_turret_mini_gun_ac1c64dbcd1857130d1bd6786c6e695b9}\label{class_turret_mini_gun_ac1c64dbcd1857130d1bd6786c6e695b9}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!get\+Damage@{get\+Damage}}
+\index{get\+Damage@{get\+Damage}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{get\+Damage()}{getDamage()}}
+{\footnotesize\ttfamily float Turret\+Mini\+Gun.\+get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the amount of damage to make the objetive. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}.
+
+\mbox{\Hypertarget{class_turret_mini_gun_a38e7de5216effbf5855e7e2f0fd27e08}\label{class_turret_mini_gun_a38e7de5216effbf5855e7e2f0fd27e08}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!play\+Manually@{play\+Manually}}
+\index{play\+Manually@{play\+Manually}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{play\+Manually()}{playManually()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+play\+Manually (\begin{DoxyParamCaption}\item[{bool}]{pressed }\end{DoxyParamCaption})}
+
+
+
+Called from the game\+Mode\+Manager in \mbox{\hyperlink{class_shoot_mode}{Shoot\+Mode}}. checks the inputs to shoot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turret_mini_gun_a1fddb95fa87c0de06be43cfbc9e97c81}\label{class_turret_mini_gun_a1fddb95fa87c0de06be43cfbc9e97c81}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!press\+Trigger@{press\+Trigger}}
+\index{press\+Trigger@{press\+Trigger}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{press\+Trigger()}{pressTrigger()}}
+{\footnotesize\ttfamily I\+Enumerator Turret\+Mini\+Gun.\+press\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apllies the delay in the shoots. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_turret_mini_gun_a8d975f5b522d64c92b69852af5c58db6}\label{class_turret_mini_gun_a8d975f5b522d64c92b69852af5c58db6}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!remove\+Target@{remove\+Target}}
+\index{remove\+Target@{remove\+Target}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{remove\+Target()}{removeTarget()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+remove\+Target (\begin{DoxyParamCaption}\item[{Transform}]{target }\end{DoxyParamCaption})}
+
+
+
+Removes a target from the enemy\+Target list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}.
+
+\mbox{\Hypertarget{class_turret_mini_gun_a31f68aef8df52f09916e4540c47c9fde}\label{class_turret_mini_gun_a31f68aef8df52f09916e4540c47c9fde}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!rotate@{rotate}}
+\index{rotate@{rotate}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+rotate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Rotates the mobile part of the turret by a given amount in each axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turret_mini_gun_ab783f041cc7969bc9477a2c33ff4fc92}\label{class_turret_mini_gun_ab783f041cc7969bc9477a2c33ff4fc92}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!set\+Is\+Shooting@{set\+Is\+Shooting}}
+\index{set\+Is\+Shooting@{set\+Is\+Shooting}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{set\+Is\+Shooting()}{setIsShooting()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+set\+Is\+Shooting (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Setter for is\+Shooting variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turret_mini_gun_a85ac788b061c745f1b920e749771ec1c}\label{class_turret_mini_gun_a85ac788b061c745f1b920e749771ec1c}} 
+\index{Turret\+Mini\+Gun@{Turret\+Mini\+Gun}!shoot@{shoot}}
+\index{shoot@{shoot}!Turret\+Mini\+Gun@{Turret\+Mini\+Gun}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Turret\+Mini\+Gun.\+shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawns a projectile and sends it forward by a given force. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Buildings/Turret\+Mini\+Gun.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,385 @@
+\hypertarget{class_building}{}\section{Building Class Reference}
+\label{class_building}\index{Building@{Building}}
+
+
+Father class for all the objects that can be placed in the world and be interactuable.  
+
+
+Inheritance diagram for Building\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_building}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_building_ac06aa2a8d21f1594e8dda8d391297f8f}{set\+Dimensions}} (int x=1, int y=1)
+\begin{DoxyCompactList}\small\item\em Sets the dimension in cells of this building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_building_abd37334947ced78272af09ff706b9944}{set\+Dimensions}} (Vector2\+Int vector)
+\begin{DoxyCompactList}\small\item\em Sets the dimension in cells of this building. \end{DoxyCompactList}\item 
+Vector2\+Int \mbox{\hyperlink{class_building_a79a7914069d3d2886512d22a02c5a328}{get\+Dimensions}} ()
+\begin{DoxyCompactList}\small\item\em Returns the dimension of this building based on the orientation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_building_a60541ddc16e4c630a396b1f1ffbbbac6}{set\+Orientation}} (orientation \mbox{\hyperlink{class_building_af17fc4832a9e36f5ea3891f486138fc6}{\+\_\+orientation}})
+\begin{DoxyCompactList}\small\item\em Sets the building orientation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_building_a3ff7dbfd8b9062dced8438c2e83b2320}{add\+Worker}} (Game\+Object worker)
+\begin{DoxyCompactList}\small\item\em Adds the given object to worker list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_building_abb43fc4e8f9666d50c67208886785ff3}{destroy\+Self}} ()
+\begin{DoxyCompactList}\small\item\em Destroys itself liberating the cells that was occupiing. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_building_aad4618cbe489fbfc99282ff8ec77297b}{remove\+Worker}} (Game\+Object worker)
+\begin{DoxyCompactList}\small\item\em Removes the given worker from the workers list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_building_addab7076893886e5bf445ee317a81fb1}{Remove\+Task}} ()
+\begin{DoxyCompactList}\small\item\em removes itself from the tasks list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_building_a1486c409143123873c387c5bd7918b76}{Apply\+Damage}} (\mbox{\hyperlink{interface_i_shooter}{I\+Shooter}} instigator)
+\begin{DoxyCompactList}\small\item\em Applies damage tho itself. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_building_a81f0e7df4171d3508afefe8deac1eea6}{set\+Cell}} (\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} other)
+\begin{DoxyCompactList}\small\item\em overwritten methods from \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} \mbox{\hyperlink{class_building_a3e889268dc78194d5a3ae48f73067ff8}{get\+Cell}} ()
+\begin{DoxyCompactList}\small\item\em Returns this building current cell. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_building_aba7c58665a626c146f2fc1e8b35cebb7}{is\+Canvas\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Returns if this canvas is active \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_building_ac9c5243414b3e56c11b3af749c5dd61d}{get\+Canvas}} ()
+\begin{DoxyCompactList}\small\item\em Returns this building canvas. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_building_a29767cd7ca42694862d08cb4bd71154a}{hide\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Disables the \mbox{\hyperlink{class_u_i_mode}{U\+I\+Mode}} in the \mbox{\hyperlink{class_game_mode_manager}{Game\+Mode\+Manager}} and enables the \mbox{\hyperlink{class_selection_mode}{Selection\+Mode}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_building_af6265930a8190d2119a20823e14c51c9}\label{class_building_af6265930a8190d2119a20823e14c51c9}} 
+virtual void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_building_aa64dc20cfb819092291546497fe988e2}\label{class_building_aa64dc20cfb819092291546497fe988e2}} 
+virtual void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_building_a268c2b42157075ee90ea9b8ec5fc1a06}\label{class_building_a268c2b42157075ee90ea9b8ec5fc1a06}} 
+virtual void {\bfseries Check\+Destruction} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} \mbox{\hyperlink{class_building_ae4542c15fe24dd9499c72b16cb329492}{cell}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} the building is associated with. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_building_a8a0f028fd434f39eec8a5d3f5f6df82d}{canvas\+Prefab}}
+\begin{DoxyCompactList}\small\item\em Canvas to create on spawn. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_building_a404053cc6bb26179c3ffacba529323ab}{canvas}}
+\begin{DoxyCompactList}\small\item\em building canvas \end{DoxyCompactList}\item 
+Vector2\+Int \mbox{\hyperlink{class_building_a5fce85810caa468c10e4c13f6ae0d7f2}{Dimension}}
+\begin{DoxyCompactList}\small\item\em Dimension in cells of this building. \end{DoxyCompactList}\item 
+orientation \mbox{\hyperlink{class_building_af17fc4832a9e36f5ea3891f486138fc6}{\+\_\+orientation}}
+\begin{DoxyCompactList}\small\item\em Orientation of the building. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_building_a694eaef4268e25024f43389db9527dde}{U\+I\+Placement}}
+\begin{DoxyCompactList}\small\item\em Location of the canvas relative to the building. \end{DoxyCompactList}\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_building_a0058fcade6af241bbb53527ca3b030af}{workers}}
+\begin{DoxyCompactList}\small\item\em List of workers \char`\"{}working\char`\"{} on this building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_building_aaa4b2181ae88464dd858258051460807}{num\+Workers}}
+\begin{DoxyCompactList}\small\item\em Max number of workers that can be associated with this building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_building_ab7873f236278124c6acdcee2bcc4b54b}{wood}}
+\begin{DoxyCompactList}\small\item\em Amount of resources needed for this building to be constructed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_building_a3f57dd3ced68490025e4e5dee4da8e38}\label{class_building_a3f57dd3ced68490025e4e5dee4da8e38}} 
+int {\bfseries Wood}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_building_aff0a55b9ce0b2799e0d0937e04d5c93b}\label{class_building_aff0a55b9ce0b2799e0d0937e04d5c93b}} 
+int {\bfseries Stone}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Father class for all the objects that can be placed in the world and be interactuable. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_building_a3ff7dbfd8b9062dced8438c2e83b2320}\label{class_building_a3ff7dbfd8b9062dced8438c2e83b2320}} 
+\index{Building@{Building}!add\+Worker@{add\+Worker}}
+\index{add\+Worker@{add\+Worker}!Building@{Building}}
+\subsubsection{\texorpdfstring{add\+Worker()}{addWorker()}}
+{\footnotesize\ttfamily virtual void Building.\+add\+Worker (\begin{DoxyParamCaption}\item[{Game\+Object}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds the given object to worker list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_building_a1486c409143123873c387c5bd7918b76}\label{class_building_a1486c409143123873c387c5bd7918b76}} 
+\index{Building@{Building}!Apply\+Damage@{Apply\+Damage}}
+\index{Apply\+Damage@{Apply\+Damage}!Building@{Building}}
+\subsubsection{\texorpdfstring{Apply\+Damage()}{ApplyDamage()}}
+{\footnotesize\ttfamily void Building.\+Apply\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}}]{instigator }\end{DoxyParamCaption})}
+
+
+
+Applies damage tho itself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instigator} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_damageable}{I\+Damageable}}.
+
+\mbox{\Hypertarget{class_building_abb43fc4e8f9666d50c67208886785ff3}\label{class_building_abb43fc4e8f9666d50c67208886785ff3}} 
+\index{Building@{Building}!destroy\+Self@{destroy\+Self}}
+\index{destroy\+Self@{destroy\+Self}!Building@{Building}}
+\subsubsection{\texorpdfstring{destroy\+Self()}{destroySelf()}}
+{\footnotesize\ttfamily void Building.\+destroy\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys itself liberating the cells that was occupiing. 
+
+\mbox{\Hypertarget{class_building_ac9c5243414b3e56c11b3af749c5dd61d}\label{class_building_ac9c5243414b3e56c11b3af749c5dd61d}} 
+\index{Building@{Building}!get\+Canvas@{get\+Canvas}}
+\index{get\+Canvas@{get\+Canvas}!Building@{Building}}
+\subsubsection{\texorpdfstring{get\+Canvas()}{getCanvas()}}
+{\footnotesize\ttfamily Game\+Object Building.\+get\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns this building canvas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_building_a3e889268dc78194d5a3ae48f73067ff8}\label{class_building_a3e889268dc78194d5a3ae48f73067ff8}} 
+\index{Building@{Building}!get\+Cell@{get\+Cell}}
+\index{get\+Cell@{get\+Cell}!Building@{Building}}
+\subsubsection{\texorpdfstring{get\+Cell()}{getCell()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}} Building.\+get\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns this building current cell. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_selectable_object_a80e0f02ea8465ff2edfbaee1d5451dde}{Selectable\+Object}}.
+
+\mbox{\Hypertarget{class_building_a79a7914069d3d2886512d22a02c5a328}\label{class_building_a79a7914069d3d2886512d22a02c5a328}} 
+\index{Building@{Building}!get\+Dimensions@{get\+Dimensions}}
+\index{get\+Dimensions@{get\+Dimensions}!Building@{Building}}
+\subsubsection{\texorpdfstring{get\+Dimensions()}{getDimensions()}}
+{\footnotesize\ttfamily Vector2\+Int Building.\+get\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the dimension of this building based on the orientation. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_building_a29767cd7ca42694862d08cb4bd71154a}\label{class_building_a29767cd7ca42694862d08cb4bd71154a}} 
+\index{Building@{Building}!hide\+Interface@{hide\+Interface}}
+\index{hide\+Interface@{hide\+Interface}!Building@{Building}}
+\subsubsection{\texorpdfstring{hide\+Interface()}{hideInterface()}}
+{\footnotesize\ttfamily virtual void Building.\+hide\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Disables the \mbox{\hyperlink{class_u_i_mode}{U\+I\+Mode}} in the \mbox{\hyperlink{class_game_mode_manager}{Game\+Mode\+Manager}} and enables the \mbox{\hyperlink{class_selection_mode}{Selection\+Mode}}. 
+
+\mbox{\Hypertarget{class_building_aba7c58665a626c146f2fc1e8b35cebb7}\label{class_building_aba7c58665a626c146f2fc1e8b35cebb7}} 
+\index{Building@{Building}!is\+Canvas\+Active@{is\+Canvas\+Active}}
+\index{is\+Canvas\+Active@{is\+Canvas\+Active}!Building@{Building}}
+\subsubsection{\texorpdfstring{is\+Canvas\+Active()}{isCanvasActive()}}
+{\footnotesize\ttfamily bool Building.\+is\+Canvas\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns if this canvas is active 
+
+\mbox{\Hypertarget{class_building_addab7076893886e5bf445ee317a81fb1}\label{class_building_addab7076893886e5bf445ee317a81fb1}} 
+\index{Building@{Building}!Remove\+Task@{Remove\+Task}}
+\index{Remove\+Task@{Remove\+Task}!Building@{Building}}
+\subsubsection{\texorpdfstring{Remove\+Task()}{RemoveTask()}}
+{\footnotesize\ttfamily void Building.\+Remove\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+removes itself from the tasks list. 
+
+\mbox{\Hypertarget{class_building_aad4618cbe489fbfc99282ff8ec77297b}\label{class_building_aad4618cbe489fbfc99282ff8ec77297b}} 
+\index{Building@{Building}!remove\+Worker@{remove\+Worker}}
+\index{remove\+Worker@{remove\+Worker}!Building@{Building}}
+\subsubsection{\texorpdfstring{remove\+Worker()}{removeWorker()}}
+{\footnotesize\ttfamily virtual void Building.\+remove\+Worker (\begin{DoxyParamCaption}\item[{Game\+Object}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes the given worker from the workers list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_building_a81f0e7df4171d3508afefe8deac1eea6}\label{class_building_a81f0e7df4171d3508afefe8deac1eea6}} 
+\index{Building@{Building}!set\+Cell@{set\+Cell}}
+\index{set\+Cell@{set\+Cell}!Building@{Building}}
+\subsubsection{\texorpdfstring{set\+Cell()}{setCell()}}
+{\footnotesize\ttfamily override void Building.\+set\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+overwritten methods from \mbox{\hyperlink{class_selectable_object}{Selectable\+Object}}. 
+
+Sets this building current cell. 
+
+Reimplemented from \mbox{\hyperlink{class_selectable_object_a8d56c05598d677cca9c8b06a774ee5a2}{Selectable\+Object}}.
+
+\mbox{\Hypertarget{class_building_ac06aa2a8d21f1594e8dda8d391297f8f}\label{class_building_ac06aa2a8d21f1594e8dda8d391297f8f}} 
+\index{Building@{Building}!set\+Dimensions@{set\+Dimensions}}
+\index{set\+Dimensions@{set\+Dimensions}!Building@{Building}}
+\subsubsection{\texorpdfstring{set\+Dimensions()}{setDimensions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Building.\+set\+Dimensions (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 1},  }\item[{int}]{y = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Sets the dimension in cells of this building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_building_abd37334947ced78272af09ff706b9944}\label{class_building_abd37334947ced78272af09ff706b9944}} 
+\index{Building@{Building}!set\+Dimensions@{set\+Dimensions}}
+\index{set\+Dimensions@{set\+Dimensions}!Building@{Building}}
+\subsubsection{\texorpdfstring{set\+Dimensions()}{setDimensions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Building.\+set\+Dimensions (\begin{DoxyParamCaption}\item[{Vector2\+Int}]{vector }\end{DoxyParamCaption})}
+
+
+
+Sets the dimension in cells of this building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_building_a60541ddc16e4c630a396b1f1ffbbbac6}\label{class_building_a60541ddc16e4c630a396b1f1ffbbbac6}} 
+\index{Building@{Building}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!Building@{Building}}
+\subsubsection{\texorpdfstring{set\+Orientation()}{setOrientation()}}
+{\footnotesize\ttfamily void Building.\+set\+Orientation (\begin{DoxyParamCaption}\item[{orientation}]{\+\_\+orientation }\end{DoxyParamCaption})}
+
+
+
+Sets the building orientation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+orientation} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_building_af17fc4832a9e36f5ea3891f486138fc6}\label{class_building_af17fc4832a9e36f5ea3891f486138fc6}} 
+\index{Building@{Building}!\+\_\+orientation@{\+\_\+orientation}}
+\index{\+\_\+orientation@{\+\_\+orientation}!Building@{Building}}
+\subsubsection{\texorpdfstring{\+\_\+orientation}{\_orientation}}
+{\footnotesize\ttfamily orientation Building.\+\_\+orientation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Orientation of the building. 
+
+\mbox{\Hypertarget{class_building_a404053cc6bb26179c3ffacba529323ab}\label{class_building_a404053cc6bb26179c3ffacba529323ab}} 
+\index{Building@{Building}!canvas@{canvas}}
+\index{canvas@{canvas}!Building@{Building}}
+\subsubsection{\texorpdfstring{canvas}{canvas}}
+{\footnotesize\ttfamily Game\+Object Building.\+canvas\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+building canvas 
+
+\mbox{\Hypertarget{class_building_a8a0f028fd434f39eec8a5d3f5f6df82d}\label{class_building_a8a0f028fd434f39eec8a5d3f5f6df82d}} 
+\index{Building@{Building}!canvas\+Prefab@{canvas\+Prefab}}
+\index{canvas\+Prefab@{canvas\+Prefab}!Building@{Building}}
+\subsubsection{\texorpdfstring{canvas\+Prefab}{canvasPrefab}}
+{\footnotesize\ttfamily Game\+Object Building.\+canvas\+Prefab\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Canvas to create on spawn. 
+
+\mbox{\Hypertarget{class_building_ae4542c15fe24dd9499c72b16cb329492}\label{class_building_ae4542c15fe24dd9499c72b16cb329492}} 
+\index{Building@{Building}!cell@{cell}}
+\index{cell@{cell}!Building@{Building}}
+\subsubsection{\texorpdfstring{cell}{cell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} Building.\+cell\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_cell}{Cell}} the building is associated with. 
+
+\mbox{\Hypertarget{class_building_a5fce85810caa468c10e4c13f6ae0d7f2}\label{class_building_a5fce85810caa468c10e4c13f6ae0d7f2}} 
+\index{Building@{Building}!Dimension@{Dimension}}
+\index{Dimension@{Dimension}!Building@{Building}}
+\subsubsection{\texorpdfstring{Dimension}{Dimension}}
+{\footnotesize\ttfamily Vector2\+Int Building.\+Dimension\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dimension in cells of this building. 
+
+\mbox{\Hypertarget{class_building_aaa4b2181ae88464dd858258051460807}\label{class_building_aaa4b2181ae88464dd858258051460807}} 
+\index{Building@{Building}!num\+Workers@{num\+Workers}}
+\index{num\+Workers@{num\+Workers}!Building@{Building}}
+\subsubsection{\texorpdfstring{num\+Workers}{numWorkers}}
+{\footnotesize\ttfamily int Building.\+num\+Workers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Max number of workers that can be associated with this building. 
+
+\mbox{\Hypertarget{class_building_a694eaef4268e25024f43389db9527dde}\label{class_building_a694eaef4268e25024f43389db9527dde}} 
+\index{Building@{Building}!U\+I\+Placement@{U\+I\+Placement}}
+\index{U\+I\+Placement@{U\+I\+Placement}!Building@{Building}}
+\subsubsection{\texorpdfstring{U\+I\+Placement}{UIPlacement}}
+{\footnotesize\ttfamily Vector3 Building.\+U\+I\+Placement\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Location of the canvas relative to the building. 
+
+\mbox{\Hypertarget{class_building_ab7873f236278124c6acdcee2bcc4b54b}\label{class_building_ab7873f236278124c6acdcee2bcc4b54b}} 
+\index{Building@{Building}!wood@{wood}}
+\index{wood@{wood}!Building@{Building}}
+\subsubsection{\texorpdfstring{wood}{wood}}
+{\footnotesize\ttfamily int Building.\+wood\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Amount of resources needed for this building to be constructed. 
+
+\mbox{\Hypertarget{class_building_a0058fcade6af241bbb53527ca3b030af}\label{class_building_a0058fcade6af241bbb53527ca3b030af}} 
+\index{Building@{Building}!workers@{workers}}
+\index{workers@{workers}!Building@{Building}}
+\subsubsection{\texorpdfstring{workers}{workers}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Building.\+workers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+List of workers \char`\"{}working\char`\"{} on this building. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Buildings/Building.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,193 @@
+\hypertarget{class_worker}{}\section{Worker Class Reference}
+\label{class_worker}\index{Worker@{Worker}}
+
+
+Class that manages where the worker should go. And its state of live.  
+
+
+Inheritance diagram for Worker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_worker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_worker_afe55750c4fb5679683417e717f3aa399}{set\+Building}} (Game\+Object building)
+\begin{DoxyCompactList}\small\item\em Sets the building this worker is tasked to go. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_ae7adec62661e7e34f7fa2a482ead0ff3}{set\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tasked building to null. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_worker_a02dbad705674cab848e27a8900711fa0}{get\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Returns the building the worker is tasked to go to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_ae01182ca082cf86ec49d6392654a90a1}{set\+Destination}} (Vector3 destiny)
+\begin{DoxyCompactList}\small\item\em Sets the destination of this worker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_a72be600dcec9d710cfc8ab1cc42044d6}{set\+Worker\+Manager}} (\mbox{\hyperlink{class_workers_manager}{Workers\+Manager}} manager)
+\begin{DoxyCompactList}\small\item\em Sets the manager of this worker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_a9bcae4b811749fe167231b32480e5fe1}{set\+Player}} (\mbox{\hyperlink{class_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em Sets the Game Mode Manager that acts as player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_worker_a5e30c24482b9784f59623e8443e46827}{get\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Game Mode Manager that acts as player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_a13feed5a2e9d542b506ac1d1454d2ebf}{set\+Home}} (\mbox{\hyperlink{class_house}{House}} home)
+\begin{DoxyCompactList}\small\item\em Sets the variable home. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_a7a73629546f14e99a70363e5f7049092}{remove\+Self}} ()
+\begin{DoxyCompactList}\small\item\em Removes this worker from the lists of the \mbox{\hyperlink{class_worker}{Worker}} manager and clears the space in the house attached for a new worker to spawn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_worker_a4ff9d9772297f4d306e8203bcf1f8fa6}{Apply\+Damage}} (\mbox{\hyperlink{interface_i_shooter}{I\+Shooter}} instigator)
+\begin{DoxyCompactList}\small\item\em Applies damage to himself. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that manages where the worker should go. And its state of live. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_worker_a4ff9d9772297f4d306e8203bcf1f8fa6}\label{class_worker_a4ff9d9772297f4d306e8203bcf1f8fa6}} 
+\index{Worker@{Worker}!Apply\+Damage@{Apply\+Damage}}
+\index{Apply\+Damage@{Apply\+Damage}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{Apply\+Damage()}{ApplyDamage()}}
+{\footnotesize\ttfamily void Worker.\+Apply\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_shooter}{I\+Shooter}}}]{instigator }\end{DoxyParamCaption})}
+
+
+
+Applies damage to himself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instigator} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_damageable}{I\+Damageable}}.
+
+\mbox{\Hypertarget{class_worker_a02dbad705674cab848e27a8900711fa0}\label{class_worker_a02dbad705674cab848e27a8900711fa0}} 
+\index{Worker@{Worker}!get\+Building@{get\+Building}}
+\index{get\+Building@{get\+Building}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{get\+Building()}{getBuilding()}}
+{\footnotesize\ttfamily Game\+Object Worker.\+get\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the building the worker is tasked to go to. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_worker_a5e30c24482b9784f59623e8443e46827}\label{class_worker_a5e30c24482b9784f59623e8443e46827}} 
+\index{Worker@{Worker}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Worker.\+get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Game Mode Manager that acts as player. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_damageable}{I\+Damageable}}.
+
+\mbox{\Hypertarget{class_worker_a7a73629546f14e99a70363e5f7049092}\label{class_worker_a7a73629546f14e99a70363e5f7049092}} 
+\index{Worker@{Worker}!remove\+Self@{remove\+Self}}
+\index{remove\+Self@{remove\+Self}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{remove\+Self()}{removeSelf()}}
+{\footnotesize\ttfamily void Worker.\+remove\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes this worker from the lists of the \mbox{\hyperlink{class_worker}{Worker}} manager and clears the space in the house attached for a new worker to spawn. 
+
+\mbox{\Hypertarget{class_worker_afe55750c4fb5679683417e717f3aa399}\label{class_worker_afe55750c4fb5679683417e717f3aa399}} 
+\index{Worker@{Worker}!set\+Building@{set\+Building}}
+\index{set\+Building@{set\+Building}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{set\+Building()}{setBuilding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Worker.\+set\+Building (\begin{DoxyParamCaption}\item[{Game\+Object}]{building }\end{DoxyParamCaption})}
+
+
+
+Sets the building this worker is tasked to go. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_worker_ae7adec62661e7e34f7fa2a482ead0ff3}\label{class_worker_ae7adec62661e7e34f7fa2a482ead0ff3}} 
+\index{Worker@{Worker}!set\+Building@{set\+Building}}
+\index{set\+Building@{set\+Building}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{set\+Building()}{setBuilding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Worker.\+set\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the tasked building to null. 
+
+\mbox{\Hypertarget{class_worker_ae01182ca082cf86ec49d6392654a90a1}\label{class_worker_ae01182ca082cf86ec49d6392654a90a1}} 
+\index{Worker@{Worker}!set\+Destination@{set\+Destination}}
+\index{set\+Destination@{set\+Destination}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{set\+Destination()}{setDestination()}}
+{\footnotesize\ttfamily void Worker.\+set\+Destination (\begin{DoxyParamCaption}\item[{Vector3}]{destiny }\end{DoxyParamCaption})}
+
+
+
+Sets the destination of this worker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destiny} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_worker_a13feed5a2e9d542b506ac1d1454d2ebf}\label{class_worker_a13feed5a2e9d542b506ac1d1454d2ebf}} 
+\index{Worker@{Worker}!set\+Home@{set\+Home}}
+\index{set\+Home@{set\+Home}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{set\+Home()}{setHome()}}
+{\footnotesize\ttfamily void Worker.\+set\+Home (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_house}{House}}}]{home }\end{DoxyParamCaption})}
+
+
+
+Sets the variable home. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em home} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_worker_a9bcae4b811749fe167231b32480e5fe1}\label{class_worker_a9bcae4b811749fe167231b32480e5fe1}} 
+\index{Worker@{Worker}!set\+Player@{set\+Player}}
+\index{set\+Player@{set\+Player}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{set\+Player()}{setPlayer()}}
+{\footnotesize\ttfamily void Worker.\+set\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+
+
+Sets the Game Mode Manager that acts as player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Mode} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_worker_a72be600dcec9d710cfc8ab1cc42044d6}\label{class_worker_a72be600dcec9d710cfc8ab1cc42044d6}} 
+\index{Worker@{Worker}!set\+Worker\+Manager@{set\+Worker\+Manager}}
+\index{set\+Worker\+Manager@{set\+Worker\+Manager}!Worker@{Worker}}
+\subsubsection{\texorpdfstring{set\+Worker\+Manager()}{setWorkerManager()}}
+{\footnotesize\ttfamily void Worker.\+set\+Worker\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_workers_manager}{Workers\+Manager}}}]{manager }\end{DoxyParamCaption})}
+
+
+
+Sets the manager of this worker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Workers/Worker.\+cs\end{DoxyCompactItemize}

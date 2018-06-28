@@ -1,0 +1,126 @@
+\hypertarget{class_game_mode_manager}{}\section{Game\+Mode\+Manager Class Reference}
+\label{class_game_mode_manager}\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+
+
+Class that controls the different modes the player can be in.  
+
+
+Inheritance diagram for Game\+Mode\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mode_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_mode_manager_a3571ab1df61bc08ade07a49fefac6806}{enable\+Construction\+Mode}} (int building\+ID)
+\begin{DoxyCompactList}\small\item\em Enables the construction mode deactivating the current mode given an id of the building to construct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_manager_a593ebd11a47f34970079b487c1ee1903}{enable\+Selection\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Enables the selection mode deactivating the current mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_manager_a266f436dd6216a6a59bbb0bacdf247fe}{enable\+U\+I\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Enables the interface mode deactivating the current mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_manager_a48288aeaccf2585ec6c8007c1b59c825}{enable\+Shoot\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Allows to posses a turret, deactivating the active game mode in the process. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_game_mode}{Game\+Mode}} \mbox{\hyperlink{class_game_mode_manager_a11cd556a3f6c2a97136de40bbf62633c}{get\+Current\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current active game mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text \mbox{\hyperlink{class_game_mode_manager_a29e2b01816f5a4b0dc03ebf086f04c30}{wood\+Text}}
+\begin{DoxyCompactList}\small\item\em UI texts of the resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_mode_manager_a75bfbf0bdce4d6c65b77852264562711}\label{class_game_mode_manager_a75bfbf0bdce4d6c65b77852264562711}} 
+override void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that controls the different modes the player can be in. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_mode_manager_a3571ab1df61bc08ade07a49fefac6806}\label{class_game_mode_manager_a3571ab1df61bc08ade07a49fefac6806}} 
+\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}!enable\+Construction\+Mode@{enable\+Construction\+Mode}}
+\index{enable\+Construction\+Mode@{enable\+Construction\+Mode}!Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+\subsubsection{\texorpdfstring{enable\+Construction\+Mode()}{enableConstructionMode()}}
+{\footnotesize\ttfamily void Game\+Mode\+Manager.\+enable\+Construction\+Mode (\begin{DoxyParamCaption}\item[{int}]{building\+ID }\end{DoxyParamCaption})}
+
+
+
+Enables the construction mode deactivating the current mode given an id of the building to construct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building\+ID} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_mode_manager_a593ebd11a47f34970079b487c1ee1903}\label{class_game_mode_manager_a593ebd11a47f34970079b487c1ee1903}} 
+\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}!enable\+Selection\+Mode@{enable\+Selection\+Mode}}
+\index{enable\+Selection\+Mode@{enable\+Selection\+Mode}!Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+\subsubsection{\texorpdfstring{enable\+Selection\+Mode()}{enableSelectionMode()}}
+{\footnotesize\ttfamily void Game\+Mode\+Manager.\+enable\+Selection\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables the selection mode deactivating the current mode. 
+
+\mbox{\Hypertarget{class_game_mode_manager_a48288aeaccf2585ec6c8007c1b59c825}\label{class_game_mode_manager_a48288aeaccf2585ec6c8007c1b59c825}} 
+\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}!enable\+Shoot\+Mode@{enable\+Shoot\+Mode}}
+\index{enable\+Shoot\+Mode@{enable\+Shoot\+Mode}!Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+\subsubsection{\texorpdfstring{enable\+Shoot\+Mode()}{enableShootMode()}}
+{\footnotesize\ttfamily void Game\+Mode\+Manager.\+enable\+Shoot\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows to posses a turret, deactivating the active game mode in the process. 
+
+\mbox{\Hypertarget{class_game_mode_manager_a266f436dd6216a6a59bbb0bacdf247fe}\label{class_game_mode_manager_a266f436dd6216a6a59bbb0bacdf247fe}} 
+\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}!enable\+U\+I\+Mode@{enable\+U\+I\+Mode}}
+\index{enable\+U\+I\+Mode@{enable\+U\+I\+Mode}!Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+\subsubsection{\texorpdfstring{enable\+U\+I\+Mode()}{enableUIMode()}}
+{\footnotesize\ttfamily void Game\+Mode\+Manager.\+enable\+U\+I\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables the interface mode deactivating the current mode. 
+
+\mbox{\Hypertarget{class_game_mode_manager_a11cd556a3f6c2a97136de40bbf62633c}\label{class_game_mode_manager_a11cd556a3f6c2a97136de40bbf62633c}} 
+\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}!get\+Current\+Mode@{get\+Current\+Mode}}
+\index{get\+Current\+Mode@{get\+Current\+Mode}!Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+\subsubsection{\texorpdfstring{get\+Current\+Mode()}{getCurrentMode()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_game_mode}{Game\+Mode}} Game\+Mode\+Manager.\+get\+Current\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the current active game mode 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_player_aaa2486d0dcaa57a4eb757b1e9d02d73f}{Player}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_mode_manager_a29e2b01816f5a4b0dc03ebf086f04c30}\label{class_game_mode_manager_a29e2b01816f5a4b0dc03ebf086f04c30}} 
+\index{Game\+Mode\+Manager@{Game\+Mode\+Manager}!wood\+Text@{wood\+Text}}
+\index{wood\+Text@{wood\+Text}!Game\+Mode\+Manager@{Game\+Mode\+Manager}}
+\subsubsection{\texorpdfstring{wood\+Text}{woodText}}
+{\footnotesize\ttfamily Text Game\+Mode\+Manager.\+wood\+Text}
+
+
+
+UI texts of the resources. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/mah\+Things/trabajos\+\_\+clase/unity/\+R\+T\+S/\+R\+T\+S/\+Assets/\+Scripts/\+Game\+Modes/Game\+Mode\+Manager.\+cs\end{DoxyCompactItemize}
