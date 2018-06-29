@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2729ac396b80dff41ac702522b291c4d
+timeCreated: 1462715652
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - muro: {fileID: 132894, guid: 079a4dce5b0fd0c4592b763cbe81efb8, type: 2}
+  - Torreta: {fileID: 199416, guid: b9d84b083ff2ca34aaa2636515ef3b6f, type: 2}
+  - camara: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
